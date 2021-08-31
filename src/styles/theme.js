@@ -26,6 +26,7 @@ export const theme = extendTheme({
         fontSize: 14,
         borderRadius: 10,
         _hover: {
+          transform: "scale(1.02);",
           //textDecoration: "underline",
         },
       },

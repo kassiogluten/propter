@@ -7,10 +7,9 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>TITULO</title>
+        <title>Propter | Gestão contábil</title>
       </Head>
       <Header />
-      <Hero />
       <Hero />
       <Hero />
     </div>

@@ -2,13 +2,16 @@ import { createContext, useContext, useState } from "react";
 const Context = createContext();
 
 export function ContextProvider({ children }) {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isLinksOpen, setIsLinksOpen] = useState(false);
 
   return (
     <Context.Provider
       value={{
-        isModalOpen,
-        setIsModalOpen,
+        isServicesOpen,
+        setIsServicesOpen,
+        isLinksOpen,
+        setIsLinksOpen,
       }}
     >
       {children}

@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import "../styles/logo-animation.css";
 import { theme } from "../styles/theme";
 import { ContextProvider } from "../contexts/Context";
 
