@@ -487,6 +487,366 @@ export const HeartSvg = () => (
     />
   </svg>
 );
+export const AgiSvg = () => (
+  <svg
+    width="46"
+    height="46"
+    viewBox="0 0 46 46"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect
+      opacity="0.6"
+      width="46"
+      height="46"
+      rx="11.25"
+      fill="url(#paint0_linear)"
+    />
+    <rect
+      opacity="0.8"
+      x="3"
+      y="3"
+      width="40"
+      height="40"
+      rx="10"
+      fill="url(#paint1_linear)"
+    />
+    <path
+      d="M28.7486 20.0174L26.8383 21.9277L25.6151 20.7046C25.3177 20.4071 24.8354 20.4071 24.5379 20.7046C24.2404 21.002 24.2404 21.4843 24.5379 21.7818L26.2997 23.5435C26.5971 23.841 27.0794 23.841 27.3769 23.5435L29.8258 21.0946C30.1233 20.7972 30.1233 20.3149 29.8258 20.0174C29.5284 19.72 29.0461 19.72 28.7486 20.0174Z"
+      fill="white"
+    />
+    <path
+      d="M21.5299 15.5365C21.52 15.5361 21.5104 15.535 21.5004 15.535H16.1118C15.6912 15.535 15.3501 15.876 15.3501 16.2967C15.3501 16.7174 15.6912 17.0584 16.1118 17.0584H19.8687C18.6338 18.5025 17.8662 20.3131 17.7081 22.2432H13.2881C12.8674 22.2432 12.5264 22.5843 12.5264 23.0049C12.5264 23.4256 12.8674 23.7666 13.2881 23.7666H17.708C17.8658 25.6936 18.6313 27.5052 19.8687 28.9514H10.7617C10.341 28.9514 10 29.2925 10 29.7131C10 30.1338 10.341 30.4748 10.7617 30.4748C10.8616 30.4748 21.4689 30.4757 21.5298 30.4734C23.0703 31.5724 24.9142 32.1667 26.8383 32.1667C31.9324 32.1666 36 28.0295 36 23.0049C36 15.5329 27.5379 11.2527 21.5299 15.5365ZM26.8383 30.6431C22.651 30.6431 19.2001 27.2615 19.2001 23.0049C19.2001 20.8899 20.0455 18.9223 21.5807 17.4644C26.4144 12.8719 34.4766 16.287 34.4766 23.0049C34.4766 27.2067 31.074 30.6431 26.8383 30.6431Z"
+      fill="white"
+    />
+    <path
+      d="M26.8383 18.8835C27.3059 18.8835 27.6849 18.5044 27.6849 18.0369C27.6849 17.5693 27.3059 17.1902 26.8383 17.1902C26.3707 17.1902 25.9917 17.5693 25.9917 18.0369C25.9917 18.5044 26.3707 18.8835 26.8383 18.8835Z"
+      fill="white"
+    />
+    <path
+      d="M26.8383 28.8195C27.3059 28.8195 27.6849 28.4405 27.6849 27.9729C27.6849 27.5054 27.3059 27.1264 26.8383 27.1264C26.3708 27.1264 25.9917 27.5054 25.9917 27.9729C25.9917 28.4405 26.3708 28.8195 26.8383 28.8195Z"
+      fill="white"
+    />
+    <path
+      d="M31.7782 22.1301C31.3106 22.1301 30.9316 22.5091 30.9316 22.9767C30.9316 23.4443 31.3106 23.8233 31.7782 23.8233C32.2458 23.8233 32.6248 23.4443 32.6248 22.9767C32.6247 22.5091 32.2457 22.1301 31.7782 22.1301Z"
+      fill="white"
+    />
+    <path
+      d="M21.9741 23.8132C22.4356 23.7384 22.749 23.3036 22.6742 22.8422C22.5994 22.3807 22.1647 22.0672 21.7032 22.142C21.2417 22.2169 20.9283 22.6516 21.0031 23.1131C21.0779 23.5745 21.5126 23.888 21.9741 23.8132Z"
+      fill="white"
+    />
+    <defs>
+      <linearGradient
+        id="paint0_linear"
+        x1="-8.625"
+        y1="23"
+        x2="59.9327"
+        y2="23"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#21D97A" />
+        <stop offset="1" stopColor="#2659FF" />
+      </linearGradient>
+      <linearGradient
+        id="paint1_linear"
+        x1="5.00001"
+        y1="6.49998"
+        x2="61.5"
+        y2="43"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#21D97A" />
+        <stop offset="1" stopColor="#2659FF" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
+export const PreSvg = () => (
+  <svg
+    width="46"
+    height="46"
+    viewBox="0 0 46 46"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect
+      opacity="0.6"
+      width="46"
+      height="46"
+      rx="11.25"
+      fill="url(#paint0_linear)"
+    />
+    <rect
+      opacity="0.8"
+      x="3"
+      y="3"
+      width="40"
+      height="40"
+      rx="10"
+      fill="url(#paint1_linear)"
+    />
+    <path
+      d="M32.646 22.3555C32.3272 17.5371 28.4629 13.6728 23.6445 13.354V12H22.3555V13.354C17.5371 13.6728 13.6728 17.5371 13.354 22.3555H12V23.6445H13.354C13.6728 28.4629 17.5371 32.3272 22.3555 32.646V34H23.6445V32.646C28.4629 32.3272 32.3272 28.4629 32.646 23.6445H34V22.3555H32.646ZM22.3555 14.6456V17.2352C19.6708 17.5334 17.5334 19.6708 17.2352 22.3555H14.6456C14.9596 18.248 18.248 14.9596 22.3555 14.6456ZM22.3555 31.3544C18.248 31.0404 14.9596 27.752 14.6456 23.6445H17.2352C17.5334 26.3292 19.6708 28.4666 22.3555 28.7648V31.3544ZM22.3555 26.2227V27.4655C20.3825 27.182 18.818 25.6175 18.5345 23.6445H19.7773V22.3555H18.5345C18.818 20.3825 20.3825 18.818 22.3555 18.5345V19.7773H23.6445V18.5345C25.6175 18.818 27.182 20.3825 27.4655 22.3555H26.2227V23.6445H27.4655C27.182 25.6175 25.6175 27.182 23.6445 27.4655V26.2227H22.3555ZM23.6445 31.3544V28.7648C26.3292 28.4666 28.4666 26.3291 28.7648 23.6445H31.3544C31.0404 27.752 27.752 31.0404 23.6445 31.3544ZM28.7648 22.3555C28.4666 19.6708 26.3292 17.5334 23.6445 17.2352V14.6456C27.752 14.9596 31.0404 18.248 31.3544 22.3555H28.7648Z"
+      fill="white"
+    />
+    <path
+      d="M23 21.0664C21.9338 21.0664 21.0664 21.9338 21.0664 23C21.0664 24.0662 21.9338 24.9336 23 24.9336C24.0662 24.9336 24.9336 24.0662 24.9336 23C24.9336 21.9338 24.0662 21.0664 23 21.0664Z"
+      fill="white"
+    />
+    <defs>
+      <linearGradient
+        id="paint0_linear"
+        x1="-8.625"
+        y1="23"
+        x2="59.9327"
+        y2="23"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#21D97A" />
+        <stop offset="1" stopColor="#2659FF" />
+      </linearGradient>
+      <linearGradient
+        id="paint1_linear"
+        x1="5.00001"
+        y1="6.49998"
+        x2="61.5"
+        y2="43"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#21D97A" />
+        <stop offset="1" stopColor="#2659FF" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
+export const SecSvg = () => (
+  <svg
+    width="46"
+    height="46"
+    viewBox="0 0 46 46"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect
+      opacity="0.6"
+      width="46"
+      height="46"
+      rx="11.25"
+      fill="url(#paint0_linear)"
+    />
+    <rect
+      opacity="0.8"
+      x="3"
+      y="3"
+      width="40"
+      height="40"
+      rx="10"
+      fill="url(#paint1_linear)"
+    />
+    <path
+      d="M29.1875 34H16.8125C15.6758 34 14.75 33.0751 14.75 31.9375V22.3125C14.75 21.1749 15.6758 20.25 16.8125 20.25H29.1875C30.3242 20.25 31.25 21.1749 31.25 22.3125V31.9375C31.25 33.0751 30.3242 34 29.1875 34ZM16.8125 21.625C16.4339 21.625 16.125 21.933 16.125 22.3125V31.9375C16.125 32.317 16.4339 32.625 16.8125 32.625H29.1875C29.5661 32.625 29.875 32.317 29.875 31.9375V22.3125C29.875 21.933 29.5661 21.625 29.1875 21.625H16.8125Z"
+      fill="white"
+    />
+    <path
+      d="M27.8125 21.625C27.433 21.625 27.125 21.317 27.125 20.9375V17.5C27.125 15.2258 25.2743 13.375 23 13.375C20.7258 13.375 18.875 15.2258 18.875 17.5V20.9375C18.875 21.317 18.567 21.625 18.1875 21.625C17.808 21.625 17.5 21.317 17.5 20.9375V17.5C17.5 14.4668 19.9668 12 23 12C26.0332 12 28.5 14.4668 28.5 17.5V20.9375C28.5 21.317 28.192 21.625 27.8125 21.625Z"
+      fill="white"
+    />
+    <path
+      d="M23 27.5833C21.9889 27.5833 21.1667 26.7611 21.1667 25.75C21.1667 24.7389 21.9889 23.9167 23 23.9167C24.0111 23.9167 24.8333 24.7389 24.8333 25.75C24.8333 26.7611 24.0111 27.5833 23 27.5833ZM23 25.2917C22.7479 25.2917 22.5417 25.497 22.5417 25.75C22.5417 26.003 22.7479 26.2083 23 26.2083C23.2521 26.2083 23.4583 26.003 23.4583 25.75C23.4583 25.497 23.2521 25.2917 23 25.2917Z"
+      fill="white"
+    />
+    <path
+      d="M23 30.3333C22.6205 30.3333 22.3125 30.0253 22.3125 29.6458V27.125C22.3125 26.7455 22.6205 26.4375 23 26.4375C23.3795 26.4375 23.6875 26.7455 23.6875 27.125V29.6458C23.6875 30.0253 23.3795 30.3333 23 30.3333Z"
+      fill="white"
+    />
+    <defs>
+      <linearGradient
+        id="paint0_linear"
+        x1="-8.625"
+        y1="23"
+        x2="59.9327"
+        y2="23"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#21D97A" />
+        <stop offset="1" stopColor="#2659FF" />
+      </linearGradient>
+      <linearGradient
+        id="paint1_linear"
+        x1="5.00001"
+        y1="6.49998"
+        x2="61.5"
+        y2="43"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#21D97A" />
+        <stop offset="1" stopColor="#2659FF" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
+export const EcoSvg = () => (
+  <svg
+    width="46"
+    height="46"
+    viewBox="0 0 46 46"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect
+      opacity="0.6"
+      width="46"
+      height="46"
+      rx="11.25"
+      fill="url(#paint0_linear)"
+    />
+    <rect
+      opacity="0.8"
+      x="3"
+      y="3"
+      width="40"
+      height="40"
+      rx="10"
+      fill="url(#paint1_linear)"
+    />
+    <path
+      d="M31.0185 23.5566H22.4457V14.9838C22.4457 14.6374 22.1686 14.3603 21.8222 14.3603C16.4088 14.3603 12.0023 18.7668 12.0023 24.1802C12.0023 29.5935 16.4088 34 21.8222 34C27.2356 34 31.6421 29.5935 31.6421 24.1802C31.6421 23.8384 31.3603 23.5566 31.0185 23.5566ZM21.8222 32.7529C17.097 32.7529 13.2494 28.9053 13.2494 24.1802C13.2494 19.6628 16.7598 15.9492 21.1986 15.6305V24.1802C21.1986 24.5266 21.4758 24.8037 21.8222 24.8037H30.3718C30.0531 29.2425 26.3395 32.7529 21.8222 32.7529Z"
+      fill="white"
+    />
+    <path
+      d="M33.9977 21.7875C33.9884 19.4042 33.1155 17.1085 31.5404 15.321C29.6744 13.2102 26.9954 12 24.1778 12C23.8314 12 23.5543 12.2771 23.5543 12.6236V21.8199C23.5543 22.1663 23.8314 22.4434 24.1778 22.4434H33.3741C33.7206 22.4434 33.9977 22.1663 33.9977 21.8199C33.9977 21.8106 33.9977 21.8014 33.9977 21.7875ZM24.8014 21.2009V13.2748C27.0277 13.4365 29.1155 14.4665 30.6028 16.1524C31.8499 17.5612 32.5889 19.3349 32.7275 21.2009H24.8014Z"
+      fill="white"
+    />
+    <defs>
+      <linearGradient
+        id="paint0_linear"
+        x1="-8.625"
+        y1="23"
+        x2="59.9327"
+        y2="23"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#21D97A" />
+        <stop offset="1" stopColor="#2659FF" />
+      </linearGradient>
+      <linearGradient
+        id="paint1_linear"
+        x1="5.00001"
+        y1="6.49998"
+        x2="61.5"
+        y2="43"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#21D97A" />
+        <stop offset="1" stopColor="#2659FF" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
+export const ChevronSvg = () => (
+  <svg
+    width="171"
+    height="171"
+    viewBox="0 0 171 171"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g opacity="0.5" filter="url(#filter0_d)">
+      <circle cx="85.5" cy="91.5" r="27.5" fill="white" />
+    </g>
+    <g filter="url(#filter1_d)">
+      <circle cx="85.5" cy="91.5" r="24.5" fill="white" />
+    </g>
+    <path
+      d="M77.5 88.25L85 95.75L92.5 88.25"
+      stroke="url(#paint0_linear)"
+      strokeWidth="2.72727"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <defs>
+      <filter
+        id="filter0_d"
+        x="0"
+        y="0"
+        width="171"
+        height="171"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dy="-6" />
+        <feGaussianBlur stdDeviation="29" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0.0392157 0 0 0 0 0.168627 0 0 0 0 0.25098 0 0 0 0.35 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="BackgroundImageFix"
+          result="effect1_dropShadow"
+        />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="effect1_dropShadow"
+          result="shape"
+        />
+      </filter>
+      <filter
+        id="filter1_d"
+        x="46"
+        y="55"
+        width="79"
+        height="79"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dy="3" />
+        <feGaussianBlur stdDeviation="7.5" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0.0431373 0 0 0 0 0.172549 0 0 0 0 0.254902 0 0 0 0.24 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="BackgroundImageFix"
+          result="effect1_dropShadow"
+        />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="effect1_dropShadow"
+          result="shape"
+        />
+      </filter>
+      <linearGradient
+        id="paint0_linear"
+        x1="74.6875"
+        y1="92"
+        x2="97.0433"
+        y2="92"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#21D97A" />
+        <stop offset="1" stopColor="#2659FF" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
 /* export const LogoSvg = () => (
   
 

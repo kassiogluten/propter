@@ -50,7 +50,7 @@ export function Footer() {
               h="2px"
               bgGradient="linear(to-r, verde -20%, azul 120%)"
             />
-            <Text as="a" href="#">
+            <Text as="a" href="#" pt={4}>
               Conheça a Propter
             </Text>
             <Text as="a" href="#">
@@ -70,7 +70,7 @@ export function Footer() {
               h="2px"
               bgGradient="linear(to-r, verde -20%, azul 120%)"
             />
-            <Text as="a" href="#">
+            <Text as="a" href="#" pt={4}>
               Contabilidade
             </Text>
             <Text as="a" href="#">
@@ -90,7 +90,7 @@ export function Footer() {
               h="2px"
               bgGradient="linear(to-r, verde -20%, azul 120%)"
             />
-            <Box>
+            <Box pt={4}>
               <InstagramSvg />
               <FacebookSvg />
               <TwitterSvg />
@@ -103,13 +103,20 @@ export function Footer() {
               h="2px"
               bgGradient="linear(to-r, verde -20%, azul 120%)"
             />
-            <Text as="a" href="#">
+            <Text as="a" href="#" pt={4}>
               contato@proter.com.br
             </Text>
             <Text as="a" href="#">
               (33) 3321-2121
             </Text>
-            <Button fontSize="13px" w="full" bg="azul" as="a" href="#">
+            <Button
+              colorScheme="none"
+              fontSize="13px"
+              w="full"
+              bg="azul"
+              as="a"
+              href="#"
+            >
               Fale com a gente
             </Button>
           </VStack>
