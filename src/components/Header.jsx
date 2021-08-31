@@ -15,51 +15,105 @@ import {
   Button,
   useDisclosure,
   VStack,
+  DarkMode,
+  Stack,
+  Wrap,
+  Menu as ChakraMenu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuIcon,
+  MenuCommand,
+  MenuDivider,
 } from "@chakra-ui/react";
 
-import { FaThList } from "react-icons/fa";
+import { FaThList, FaUser } from "react-icons/fa";
+import { HiOutlineUser } from "react-icons/hi";
 import React from "react";
-import { LogoSvg } from "../icons";
+import {
+  FacebookSvg,
+  InstagramSvg,
+  LogoSvg,
+  MailSvg,
+  PhoneSvg,
+  TwitterSvg,
+} from "../icons";
+import { ChevronDownIcon } from "@chakra-ui/icons";
 
 export function Header() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <header>
-      <Box pos="fixed" align="center" w="100%" bg="gray.100">
-        <Flex
-          p="1rem"
-          w="full"
+      <DarkMode>
+        <Box
           align="center"
-          maxW={1200}
-          bg="gray.50"
-          justify="space-between"
+          w="100%"
+          bgGradient="linear(to-r, cinzaclaro, cinzaescuro)"
+          borderBottomWidth={1}
+          borderColor="#0C344D"
+          color="white"
         >
-          <LogoSvg />
-          <HStack display={{ base: "none", sm: "flex" }} spacing={10}>
-            <Menu />
-          </HStack>
-          <IconButton onClick={onOpen} display={{ base: "flex", sm: "none" }}>
-            <FaThList />
-          </IconButton>
-        </Flex>
-        <Drawer autoFocus={false} returnFocusOnClose={false} isOpen={isOpen} placement="right" onClose={onClose}>
-          <DrawerOverlay />
-          <DrawerContent>
-            <DrawerCloseButton m={3} />
-            <DrawerHeader>Menu</DrawerHeader>
+          <Flex
+            display={{ base: "none", md: "flex" }}
+            px="1rem"
+            py="2rem"
+            w="full"
+            align="center"
+            maxW={1200}
+            justify="space-between"
+          >
+            <MenuTop />
+          </Flex>
+        </Box>
+        <Box
+          align="center"
+          w="100%"
+          bgGradient="linear(to-r, cinzaclaro, cinzaescuro)"
+          color="white"
+          py={{ base: 0, md: "3rem" }}
+        >
+          <Flex
+            p="1rem"
+            w="full"
+            align="center"
+            maxW={1200}
+            justify="space-between"
+          >
+            <LogoSvg />
+            <HStack display={{ base: "none", lg: "flex" }} spacing={6}>
+              <Menu />
+            </HStack>
+            <IconButton onClick={onOpen} display={{ base: "flex", lg: "none" }}>
+              <FaThList />
+            </IconButton>
+          </Flex>
+          <Drawer
+            autoFocus={false}
+            returnFocusOnClose={false}
+            isOpen={isOpen}
+            placement="right"
+            onClose={onClose}
+          >
+            <DrawerOverlay />
+            <DrawerContent color="white">
+              <DrawerCloseButton m={3} />
+              <DrawerHeader>Menu</DrawerHeader>
 
-            <DrawerBody onClick={onClose}>
-              <VStack spacing={10}>
-                <Menu />
-              </VStack>
-              <Button variant="outline" mr={3} onClick={onClose}>
-                Botao1
-              </Button>
-              <Button colorScheme="blue">Botao2</Button>
-            </DrawerBody>
-          </DrawerContent>
-        </Drawer>
-      </Box>
+              <DrawerBody>
+                <VStack spacing={10}>
+                  <Menu />
+                  <Flex display={{ base: "flex", md: "none" }}>
+                    <MenuTop />
+                  </Flex>
+                </VStack>
+              </DrawerBody>
+            </DrawerContent>
+          </Drawer>
+        </Box>
+      </DarkMode>
     </header>
   );
 }
@@ -67,13 +121,87 @@ export function Header() {
 const Menu = () => (
   <>
     <Text as="a" href="#">
-      Link1
+      Conheça a Propter
+    </Text>
+    <ChakraMenu placement="bottom">
+      <MenuButton variant="link" bg="transparent" as={Button} rightIcon={<ChevronDownIcon color="verde" />}>
+      Serviços
+      </MenuButton>
+      <MenuList bg="white" color="cinza" w={{base:"100%", lg:850}}>
+        <MenuItem>Serviços</MenuItem>
+        
+      </MenuList>
+    </ChakraMenu>
+    <ChakraMenu placement="bottom">
+      <MenuButton variant="link" bg="transparent" as={Button} rightIcon={<ChevronDownIcon color="verde" />}>
+      Links úteis
+      </MenuButton>
+      <MenuList bg="white" color="cinza" w={{base:"100%", lg:850}}>
+        <MenuItem>Links</MenuItem>
+      </MenuList>
+    </ChakraMenu>
+    <Text as="a" href="#">
+      Nosso blog
     </Text>
     <Text as="a" href="#">
-      Link2
+      Fale com a gente
     </Text>
-    <Text as="a" href="#">
-      Link3
-    </Text>
+    <Button
+      h={50}
+      px={8}
+      rightIcon={
+        <Box
+          mr={-6}
+          ml={6}
+          borderRadius={10}
+          bgGradient="linear(to-r, #04111938,#04111900)"
+          p={2}
+        >
+          <HiOutlineUser size={20} bg="azul" />
+        </Box>
+      }
+      bgGradient="linear(to-r, verde -20%, azul 120%)"
+    >
+      Área do cliente
+    </Button>
+  </>
+);
+
+const MenuTop = () => (
+  <>
+    <Wrap>
+      <HStack px={2}>
+        <InstagramSvg />
+        <Text fontSize={14} opacity={0.6}>
+          @propter
+        </Text>
+      </HStack>
+      <HStack px={2}>
+        <FacebookSvg />
+        <Text fontSize={14} opacity={0.6}>
+          @propter
+        </Text>
+      </HStack>
+      <HStack px={2}>
+        <TwitterSvg />
+        <Text fontSize={14} opacity={0.6}>
+          @propter
+        </Text>
+      </HStack>
+    </Wrap>
+    <Wrap>
+      <HStack px={2}>
+        <Text fontSize={14} opacity={0.6}>
+          contato@proter.com.br
+        </Text>
+        <MailSvg />
+      </HStack>
+      <HStack px={2}>
+        <Text fontSize={14} opacity={0.6}>
+          (33) 3321-2121
+        </Text>
+        <PhoneSvg />
+      </HStack>
+    </Wrap>
   </>
 );
