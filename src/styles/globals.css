@@ -13,3 +13,21 @@ a {
 * {
   box-sizing: border-box;
 }
+
+#copyright:hover #coracao {
+  animation: coracao 1s infinite linear;
+}
+
+@keyframes coracao {
+  0%,
+  35%,
+  50%,
+  75%,
+  100% {
+    transform: scale(1);
+  }
+  40%,
+  60% {
+    transform: scale(1.2);
+  }
+}
