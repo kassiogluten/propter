@@ -11,18 +11,53 @@ import {
 } from "../icons";
 
 export function Menu() {
-  const { setIsServicesOpen, setIsLinksOpen } = useMyContext();
+  const { setIsServicesOpen, setIsLinksOpen, isServicesOpen, isLinksOpen } =
+    useMyContext();
 
   return (
     <>
       <Text as="a" href="#">
         Conheça a Propter
       </Text>
-      <Text onClick={() => setIsServicesOpen(true)} as="a" href="#">
-        Serviços <ChevronDownIcon color="verde" />
+      <Text
+        pos="relative"
+        onClick={() => setIsServicesOpen(!isServicesOpen)}
+        as="a"
+        href="#"
+      >
+        Serviços <ChevronDownIcon transform={isServicesOpen ? "rotate(180deg)" : "rotate(0)"} color="verde" />
+        {isServicesOpen && (
+          <Box
+            display={{ base: "none", lg: "block" }}
+            transform="rotate(45deg)"
+            top="55px"
+            left={2}
+            w={16}
+            h={16}
+            bg="white"
+            pos="absolute"
+          />
+        )}
       </Text>
-      <Text onClick={() => setIsLinksOpen(true)} as="a" href="#">
-        Links úteis <ChevronDownIcon color="verde" />
+      <Text
+        pos="relative"
+        onClick={() => setIsLinksOpen(!isLinksOpen)}
+        as="a"
+        href="#"
+      >
+        Links úteis <ChevronDownIcon transform={isLinksOpen ? "rotate(180deg)" : "rotate(0)"} color="verde" />
+        {isLinksOpen && (
+          <Box
+            display={{ base: "none", lg: "block" }}
+            transform="rotate(45deg)"
+            top="55px"
+            left={2}
+            w={16}
+            h={16}
+            bg="white"
+            pos="absolute"
+          />
+        )}
       </Text>
 
       <Text as="a" href="#">

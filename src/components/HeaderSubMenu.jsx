@@ -1,6 +1,7 @@
-import { Heading, Text, VStack, Wrap } from "@chakra-ui/react";
+import { CloseIcon } from "@chakra-ui/icons";
+import { Box, CloseButton, Heading, Text, VStack, Wrap } from "@chakra-ui/react";
 import { useMyContext } from "../contexts/Context";
-import { CalculatorSvg, CardSvg, CarSvg, MoneySvg } from "../icons";
+import { CalculatorSvg, CardSvg, CarSvg, JournalSvg, LinkSvg, MoneySvg, PublicSvg, WriteSvg } from "../icons";
 
 export function MenuServices() {
   const { setIsServicesOpen } = useMyContext();
@@ -22,11 +23,12 @@ export function MenuServices() {
       onMouseLeave={() => setIsServicesOpen(false)}
       justify="space-between"
     >
+      <CloseButton pos="absolute" right={4} top={4}/>
       <VStack textAlign="start" align="start" py={8}>
         <CalculatorSvg />
         <Heading fontSize={16}>Contabilidade</Heading>
         <Text
-          maxW={270}
+          maxW={230}
           fontSize={14}
           lineHeight={"24px"}
           color="#7D8489"
@@ -40,7 +42,7 @@ export function MenuServices() {
         <MoneySvg />
         <Heading fontSize={16}>Seguros</Heading>
         <Text
-          maxW={270}
+          maxW={230}
           fontSize={14}
           lineHeight={"24px"}
           color="#7D8489"
@@ -54,7 +56,7 @@ export function MenuServices() {
         <CarSvg />
         <Heading fontSize={16}>Empréstimo/Financiamentos</Heading>
         <Text
-          maxW={270}
+          maxW={230}
           fontSize={14}
           lineHeight={"24px"}
           color="#7D8489"
@@ -67,7 +69,7 @@ export function MenuServices() {
         <CardSvg />
         <Heading fontSize={16}>Máquinas de cartão</Heading>
         <Text
-          maxW={270}
+          maxW={230}
           fontSize={14}
           lineHeight={"24px"}
           color="#7D8489"
@@ -84,7 +86,7 @@ export function MenuLinks() {
   const { setIsLinksOpen } = useMyContext();
   return (
     <Wrap
-     pos="absolute"
+      pos="absolute"
       top={{ base: 100, md: 220 }}
       left="50%"
       transform="translateX(-50%)"
@@ -100,32 +102,34 @@ export function MenuLinks() {
       onMouseLeave={() => setIsLinksOpen(false)}
       justify="space-between"
     >
-      <VStack maxW={275} textAlign="start" align="start" py={8}>
-        <CalculatorSvg />
+      <CloseButton pos="absolute" right={4} top={4}/>
+      <VStack textAlign="start" align="start" py={8}>
+        <PublicSvg />
         <Heading fontSize={16}>Públicos e Governo</Heading>
-        <Text fontSize={14} lineHeight={"24px"} color="#7D8489" pr={4}>
-        Acesse para visualizar os sites relacionados ao governo.
+        <Text maxW={230} fontSize={14} lineHeight={"24px"} color="#7D8489" pr={4}>
+          Acesse para visualizar os sites relacionados ao governo.
         </Text>
       </VStack>
-      <VStack maxW={275} textAlign="start" align="start" py={8}>
-        <MoneySvg />
+      <VStack textAlign="start" align="start" py={8}>
+        <JournalSvg />
         <Heading fontSize={16}>Jornais por estado</Heading>
-        <Text fontSize={14} lineHeight={"24px"} color="#7D8489" pr={4}>
-        Acesse as principais notícias separadas por estado.
+        <Text maxW={230} fontSize={14} lineHeight={"24px"} color="#7D8489" pr={4}>
+          Acesse as principais notícias separadas por estado.
         </Text>
       </VStack>
-      <VStack maxW={275} textAlign="start" align="start" py={8}>
-        <CarSvg />
+      <VStack textAlign="start" align="start" py={8}>
+        <WriteSvg />
         <Heading fontSize={16}>Ministérios e Secretarias</Heading>
-        <Text fontSize={14} lineHeight={"24px"} color="#7D8489" pr={4}>
-        Acesse para visualizar os principais sites relacionados ao serviço público.
+        <Text maxW={230} fontSize={14} lineHeight={"24px"} color="#7D8489" pr={4}>
+          Acesse para visualizar os principais sites relacionados ao serviço
+          público.
         </Text>
       </VStack>
-      <VStack maxW={275} textAlign="start" align="start" py={8}>
-        <CardSvg />
+      <VStack textAlign="start" align="start" py={8}>
+        <LinkSvg />
         <Heading fontSize={16}>Utilidades e outros</Heading>
-        <Text fontSize={14} lineHeight={"24px"} color="#7D8489" pr={4}>
-        Acesse outros links de utilidade pública.
+        <Text maxW={230} fontSize={14} lineHeight={"24px"} color="#7D8489" pr={4}>
+          Acesse outros links de utilidade pública.
         </Text>
       </VStack>
     </Wrap>
