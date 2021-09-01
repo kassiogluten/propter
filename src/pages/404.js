@@ -1,7 +1,7 @@
 import { Box, Button, Container, Flex, Heading } from "@chakra-ui/react";
 import Head from "next/head";
+import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
-import { Hero } from "../components/Hero";
 
 export default function Custom404() {
   return (
@@ -21,11 +21,12 @@ export default function Custom404() {
           flexDir="column"
         >
           <Heading>Página não encontrada</Heading>
-          <Button as="a" href="/">
+          <Button bg="azul" as="a" href="/">
             Voltar
           </Button>
         </Flex>
       </Box>
+      <Footer />
     </div>
   );
 }
