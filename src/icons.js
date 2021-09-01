@@ -758,11 +758,10 @@ export const ChevronSvg = () => (
       <circle cx="85.5" cy="91.5" r="24.5" fill="white" />
     </g>
     <path
-      d="M77.5 88.25L85 95.75L92.5 88.25"
-      stroke="url(#paint0_linear)"
-      strokeWidth="2.72727"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M76.5358 87.2858C77.0683 86.7532 77.9317 86.7532 78.4642 87.2858L85 93.8215L91.5358 87.2858C92.0683 86.7532 92.9317 86.7532 93.4642 87.2858C93.9968 87.8183 93.9968 88.6817 93.4642 89.2142L85.9642 96.7142C85.4317 97.2468 84.5683 97.2468 84.0358 96.7142L76.5358 89.2142C76.0032 88.6817 76.0032 87.8183 76.5358 87.2858Z"
+      fill="#2659FF"
     />
     <defs>
       <filter
@@ -833,17 +832,6 @@ export const ChevronSvg = () => (
           result="shape"
         />
       </filter>
-      <linearGradient
-        id="paint0_linear"
-        x1="74.6875"
-        y1="92"
-        x2="97.0433"
-        y2="92"
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop stopColor="#21D97A" />
-        <stop offset="1" stopColor="#2659FF" />
-      </linearGradient>
     </defs>
   </svg>
 );

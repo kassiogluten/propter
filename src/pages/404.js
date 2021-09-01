@@ -15,7 +15,6 @@ export default function Custom404() {
           p="5rem 1rem"
           align="center"
           maxW={1200}
-          bg="blue.50"
           justify="space-between"
           h={300}
           flexDir="column"

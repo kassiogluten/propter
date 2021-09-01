@@ -1,19 +1,20 @@
-import { Box, Button, Flex, Heading, Text, VStack } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, VStack, Wrap } from "@chakra-ui/react";
 
 import React from "react";
-import { AgiSvg, EcoSvg, PreSvg, SecSvg } from "../icons";
+import { AgiSvg, ChevronSvg, EcoSvg, PreSvg, SecSvg } from "../icons";
 
 export function Why() {
   return (
     <Box align="center" w="100%">
       <Flex
+        pos="relative"
         flexDir={{ base: "column", md: "row" }}
-        p="2rem"
+        p="3rem 2rem"
         m={"1rem"}
         align="center"
         textAlign="start"
         maxW={1200}
-        justify="space-around"
+        justify="space-between"
         minH={297}
         sx={{
           background:
@@ -22,24 +23,57 @@ export function Why() {
         borderRadius={20}
         color="white"
       >
-        <Heading fontSize={24}>Porque a Propter</Heading>
-        <VStack minW={100} mt={8} align="start">
-          <AgiSvg />
-          <Heading fontSize={18}>Agilidade</Heading>
-        </VStack>
-        <VStack minW={100} mt={8} align="start">
-          <PreSvg />
-          <Heading fontSize={18}>Precisão</Heading>
-        </VStack>
-        <VStack minW={100} mt={8} align="start">
-          <SecSvg />
-          <Heading fontSize={18}>Segurança</Heading>
-        </VStack>
-        <VStack minW={100} mt={8} align="start">
-          <EcoSvg />
-          <Heading fontSize={18}>Economia</Heading>
-        </VStack>
+        <Box pos="absolute" top={-24} left="50%" transform="translateX(-50%)">
+          <ChevronSvg />
+        </Box>
+        <Box>
+          <Heading py={4} fontSize={24}>
+            Porque a Propter
+          </Heading>
+        </Box>
+        <Wrap pl={4} flex={1} justify="space-evenly">
+          <Card
+            title="Agilidade"
+            desc="Uso intenso de tecnologia permitindo a velocidade de transmissão de dados."
+          >
+            <AgiSvg />
+          </Card>
+          <Card
+            title="Precisão"
+            desc="Exatidão e padronização no processamento das informações.
+"
+          >
+            <PreSvg />
+          </Card>
+          <Card
+            title="Segurança"
+            desc="Firmeza e estabilidade em todos os processos."
+          >
+            <SecSvg />
+          </Card>
+          <Card
+            title="Economia"
+            desc="Redução do tempo e de gastos com atividades manuais."
+          >
+            <EcoSvg />
+          </Card>
+        </Wrap>
       </Flex>
     </Box>
   );
 }
+
+const Card = ({ children, title, desc }) => (
+  <VStack
+    p={2}
+    minW={100}
+    maxW={190}
+    pt={{ base: 8, md: 0 }}
+    align={{ base: "center", sm: "start" }}
+    textAlign={{ base: "center", sm: "start" }}
+  >
+    {children}
+    <Heading fontSize={18}>{title}</Heading>
+    <Text>{desc}</Text>
+  </VStack>
+);
