@@ -4,6 +4,7 @@ import { Banner } from "../components/Banner";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { OurMission } from "../components/OurMission";
+import { Trajectory } from "../components/Trajectory";
 import { Why } from "../components/Why";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Banner />
       <Why />
       <OurMission />
+      <Trajectory />
       <Footer />
     </div>
   );
