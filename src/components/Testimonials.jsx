@@ -77,15 +77,20 @@ const Posts = ({ posts }) => (
     {posts.map((post) => (
       <SwiperSlide key={post.name}>
         <Flex
-          pl={4}
+          px={4}
           _hover={{ cursor: "pointer", filter: "brightness(1.25)" }}
           w="100%"
-          h={{ base: "241px", md: "420px" }}
+          h={{ base: "75vw", md: "420px" }}
           flexDir="column"
         >
-          <Grid py={8} w={300} templateColumns="auto 1fr" templateRows="1fr 1fr">
+          <Grid
+            py={8}
+            w={300}
+            templateColumns="auto 1fr"
+            templateRows="1fr 1fr"
+          >
             <GridItem colSpan="1" rowSpan="2" px={2}>
-              <Image 
+              <Image
                 borderRadius="5px"
                 width={45}
                 height={45}

@@ -43,7 +43,10 @@ export function History() {
             Assista ao vídeo e conheça sobre nós.
           </Text>
         </VStack>
-        <Box
+        <Box onClick={()=>alert('Vídeo em produção')} _hover={{
+            cursor: "pointer",
+            filter: "brightness(1.1)",
+          }}
           bgSize="cover"
           bgPos="center"
           bgImage="video.jpg"

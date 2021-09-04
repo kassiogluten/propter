@@ -50,35 +50,24 @@
   left: inherit;
 }
 
-input,
-textarea {
-  border-radius: 0 !important;
-}
-textarea {
-  border: 1px solid white !important;
-}
-textarea::placeholder,
-input::placeholder {
-  color: white;
-}
 
 .swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: 0 !important;
+  bottom: 40px !important;
 }
 
-.Testimonials .swiper-pagination-bullet {
-  opacity: 0.5;
+ .swiper-pagination-bullet {
+  opacity: 0.3;
   margin: 0 2.5px !important;
   width: 10px;
   height: 10px;
   transition: all 300ms ease;
 }
-.Testimonials .swiper-pagination-bullet-active {
+ .swiper-pagination-bullet-active {
   opacity: 1;
   width: 20px;
-  background-color: #000;
+  background-color: azul;
   border-radius: 10px;
 }
 

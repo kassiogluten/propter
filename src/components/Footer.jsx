@@ -90,7 +90,7 @@ export function Footer() {
               h="2px"
               bgGradient="linear(to-r, verde -20%, azul 120%)"
             />
-            <Box pt={4}>
+            <Box sx={{svg:{opacity:1, mr:2}}} pt={4}>
               <InstagramSvg />
               <FacebookSvg />
               <TwitterSvg />
