@@ -15,7 +15,7 @@ import React from "react";
 export function History() {
   //  const { isModalOpen } = useMyContext();
   return (
-    <Box align="center" w="100%">
+    <Box align="center" w="100%" bg="white">
       <Flex
         p="5rem 1rem"
         align="center"

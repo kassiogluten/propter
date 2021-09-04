@@ -30,7 +30,7 @@ export function MSV() {
   );
 }
 const Card = ({ title, desc }) => (
-  <VStack
+  <VStack bg="white"
     py={8}
     my={6}
     mr={6}
