@@ -4,7 +4,7 @@ import { Banner } from "../components/Banner";
 import { Blog } from "../components/Blog";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
-import { History } from "../components/History";
+import { VideoHistory } from "../components/History";
 import { OurMission } from "../components/OurMission";
 import { Services } from "../components/Services";
 import { Testimonials } from "../components/Testimonials";
@@ -22,7 +22,7 @@ export default function Home() {
       <Why />
       <OurMission />
       <Trajectory />
-      <History />
+      <VideoHistory />
       <Services />
       <Testimonials />
       <Blog />

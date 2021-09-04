@@ -55,8 +55,8 @@ export const theme = extendTheme({
         },
       },
       body: {
-        /* bg: "var(--white)",
-        color: "var(--white)",
+        bg: "#F5F6FA",
+        /* color: "var(--white)",
         lineHeight: "inherit", */
       },
     },

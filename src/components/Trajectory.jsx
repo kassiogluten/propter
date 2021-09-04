@@ -11,7 +11,7 @@ export function Trajectory() {
   return (
     <Box bg="#F5F6FA" align="center" w="100%">
       <Flex
-        p="5rem 1rem"
+        p="5rem 1rem 0"
         textAlign="center"
         maxW={1000}
         justify="space-between"

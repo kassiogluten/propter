@@ -3,11 +3,11 @@ import { Box, Flex, Heading, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 //import { useMyContext } from "../contexts/Context";
 
-export function History() {
+export function VideoHistory() {
   //  const { isModalOpen } = useMyContext();
   return (
     <Box align="center" w="100%" bg="cinza">
-      <Flex
+      <Flex mt={16}
         align="center"
         flex={1}
         maxW={1920}
