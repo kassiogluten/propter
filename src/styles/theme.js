@@ -23,6 +23,7 @@ export const theme = extendTheme({
     cinza: "#041119",
     cinzaclaro: "#08202F",
     cinzaescuro: "#02080C",
+    texto: "#7D8489",
   },
   components: {
     Button: {

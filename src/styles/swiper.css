@@ -1,0 +1,104 @@
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+}
+.Blog.swiper-container {
+  position: static !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  bottom: 30px;
+  top: inherit;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+.swiper-button-next::after {
+  background: url("/arrow-right.svg");
+}
+.swiper-button-prev::after {
+  background: url("/arrow-right.svg");
+  transform: rotate(180deg);
+}
+
+.swiper-button-prev {
+  right: 50px;
+  left: inherit;
+}
+
+input,
+textarea {
+  border-radius: 0 !important;
+}
+textarea {
+  border: 1px solid white !important;
+}
+textarea::placeholder,
+input::placeholder {
+  color: white;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0 !important;
+}
+
+.Testimonials .swiper-pagination-bullet {
+  opacity: 0.5;
+  margin: 0 2.5px !important;
+  width: 10px;
+  height: 10px;
+  transition: all 300ms ease;
+}
+.Testimonials .swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 20px;
+  background-color: #000;
+  border-radius: 10px;
+}
+
+@media (max-width: 640px) {
+  
+  .swiper-button-next {
+    right: 20px;
+  }
+  .swiper-button-prev {
+    right: 60px;
+  }
+
+  .Blog .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .Blog .swiper-slide {
+    width: 80%;
+  }
+}

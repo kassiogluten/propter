@@ -1,15 +1,8 @@
-import { ChevronRightIcon } from "@chakra-ui/icons";
 import {
   Box,
-  Button,
   Circle,
   Flex,
-  Heading,
-  HStack,
-  Image,
   Text,
-  VStack,
-  Wrap,
 } from "@chakra-ui/react";
 
 import React from "react";
@@ -75,7 +68,8 @@ export function Trajectory() {
 
 const CardBlue = ({ year, desc }) => (
   <Flex py={8} flexWrap="wrap" w="full" maxW={900} justify="space-between">
-    <Text zIndex={2}
+    <Text
+      zIndex={2}
       w={{ base: "100%", md: "unset" }}
       textAlign="right"
       mb={4}
@@ -87,7 +81,9 @@ const CardBlue = ({ year, desc }) => (
     >
       {year}
     </Text>
-    <Box mt={4} mb={-4}
+    <Box
+      mt={4}
+      mb={-4}
       sx={{
         background:
           "linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)",
@@ -114,7 +110,9 @@ const CardGreen = ({ year, desc }) => (
     w="full"
     justify={{ base: "flex-end", md: "space-between" }}
   >
-    <Box mt={4} mb={-4}
+    <Box
+      mt={4}
+      mb={-4}
       sx={{
         background:
           "linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)",
@@ -130,7 +128,8 @@ const CardGreen = ({ year, desc }) => (
     >
       {desc}
     </Box>
-    <Text zIndex={2}
+    <Text
+      zIndex={2}
       w={{ base: "100%", md: "unset" }}
       textAlign="left"
       mb={4}
@@ -155,21 +154,23 @@ const Dot = ({ color }) => (
     mb={1}
   />
 );
+
 const TimeLine = () => (
   <Box pos="absolute">
-    <Box pt={{base:"130px", md:28}} width="20" height="1555">
+    <Box pt={{ base: "130px", md: 28 }} width="20" height="1555">
       <Dot color="#2659FF" />
-      <Box ml="6px" width="1" height={{base:380, md:260}} bg="#DCE3FF" />
+      <Box ml="6px" width="1" height={{ base: 380, md: 260 }} bg="#DCE3FF" />
       <Dot color="#21D97A" />
-      <Box ml="6px" width="1" height={{base:375, md:260}} bg="#E0F3ED" />
+      <Box ml="6px" width="1" height={{ base: 375, md: 260 }} bg="#E0F3ED" />
       <Dot color="#2659FF" />
-      <Box ml="6px" width="1" height={{base:370, md:260}} bg="#DCE3FF" />
+      <Box ml="6px" width="1" height={{ base: 370, md: 260 }} bg="#DCE3FF" />
       <Dot color="#21D97A" />
-      <Box ml="6px" width="1" height={{base:365, md:260}} bg="#E0F3ED" />
+      <Box ml="6px" width="1" height={{ base: 365, md: 260 }} bg="#E0F3ED" />
       <Dot color="#2659FF" />
     </Box>
   </Box>
 );
+
 const TimeLineSvg = () => (
   <Box pos="absolute">
     <svg

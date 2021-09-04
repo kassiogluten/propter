@@ -24,7 +24,7 @@ export function OurMission() {
       >
         <Image
           _before={{
-            content: '"asdf "',
+            content: '" "',
             width: 70,
             height: 70,
             bg: "red",
