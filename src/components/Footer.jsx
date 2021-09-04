@@ -50,7 +50,7 @@ export function Footer() {
               h="2px"
               bgGradient="linear(to-r, verde -20%, azul 120%)"
             />
-            <Text as="a" href="#" pt={4}>
+            <Text as="a" href="/conheca" pt={4}>
               Conheça a Propter
             </Text>
             <Text as="a" href="#">

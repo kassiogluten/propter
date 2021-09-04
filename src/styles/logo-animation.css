@@ -17,7 +17,7 @@
     fill: rgb(38, 89, 255);
   }
 }
-#logo:hover .logo-1 {
+#logo .logo-1 {
   animation: animate-svg-stroke-1 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both,
     animate-svg-fill-1 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1s both;
 }
@@ -39,7 +39,7 @@
     fill: rgb(33, 217, 122);
   }
 }
-#logo:hover .logo-2 {
+#logo .logo-2 {
   animation: animate-svg-stroke-2 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s
       both,
     animate-svg-fill-2 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s both;
@@ -62,7 +62,7 @@
     fill: rgb(255, 255, 255);
   }
 }
-#logo:hover .logo-3 {
+#logo .logo-3 {
   animation: animate-svg-stroke-3 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s
       both,
     animate-svg-fill-3 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s both;
@@ -85,7 +85,7 @@
     fill: rgb(255, 255, 255);
   }
 }
-#logo:hover .logo-4 {
+#logo .logo-4 {
   animation: animate-svg-stroke-4 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s
       both,
     animate-svg-fill-4 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s both;
@@ -108,7 +108,7 @@
     fill: rgb(255, 255, 255);
   }
 }
-#logo:hover .logo-5 {
+#logo .logo-5 {
   animation: animate-svg-stroke-5 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s
       both,
     animate-svg-fill-5 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.4s both;
@@ -131,7 +131,7 @@
     fill: rgb(255, 255, 255);
   }
 }
-#logo:hover .logo-6 {
+#logo .logo-6 {
   animation: animate-svg-stroke-6 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s
       both,
     animate-svg-fill-6 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5s both;
@@ -154,7 +154,7 @@
     fill: rgb(255, 255, 255);
   }
 }
-#logo:hover .logo-7 {
+#logo .logo-7 {
   animation: animate-svg-stroke-7 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.72s
       both,
     animate-svg-fill-7 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.6s both;
@@ -177,7 +177,7 @@
     fill: rgb(255, 255, 255);
   }
 }
-#logo:hover .logo-8 {
+#logo .logo-8 {
   animation: animate-svg-stroke-8 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.84s
       both,
     animate-svg-fill-8 1s cubic-bezier(0.47, 0, 0.745, 0.715)
@@ -201,7 +201,7 @@
     fill: rgb(255, 255, 255);
   }
 }
-#logo:hover .logo-9 {
+#logo .logo-9 {
   animation: animate-svg-stroke-9 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.96s
       both,
     animate-svg-fill-9 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.8s both;
@@ -224,7 +224,7 @@
     fill: rgb(255, 255, 255);
   }
 }
-#logo:hover .logo-10 {
+#logo .logo-10 {
   animation: animate-svg-stroke-10 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.08s
       both,
     animate-svg-fill-10 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.9s both;
@@ -247,7 +247,7 @@
     fill: rgb(255, 255, 255);
   }
 }
-#logo:hover .logo-11 {
+#logo .logo-11 {
   animation: animate-svg-stroke-11 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s
       both,
     animate-svg-fill-11 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2s both;
@@ -270,7 +270,7 @@
     fill: rgb(255, 255, 255);
   }
 }
-#logo:hover .logo-12 {
+#logo .logo-12 {
   animation: animate-svg-stroke-12 1s cubic-bezier(0.47, 0, 0.745, 0.715)
       1.3199999999999998s both,
     animate-svg-fill-12 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.1s both;

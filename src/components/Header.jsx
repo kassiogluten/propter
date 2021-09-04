@@ -12,7 +12,9 @@ import {
   useDisclosure,
   VStack,
   DarkMode,
+  Link
 } from "@chakra-ui/react";
+
 
 import { FaThList } from "react-icons/fa";
 import React from "react";
@@ -61,7 +63,7 @@ export function Header() {
             maxW={1200}
             justify="space-between"
           >
-            <LogoSvg />
+            <Link as="a" href="/"><LogoSvg /></Link>
             <HStack display={{ base: "none", lg: "flex" }} spacing={6}>
               <Menu />
             </HStack>

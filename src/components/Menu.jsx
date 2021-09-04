@@ -16,7 +16,7 @@ export function Menu() {
 
   return (
     <>
-      <Text as="a" href="#">
+      <Text as="a" href="/conheca">
         Conheça a Propter
       </Text>
       <Text
@@ -25,7 +25,12 @@ export function Menu() {
         as="a"
         href="#"
       >
-        Serviços <ChevronDownIcon transition="500ms all" transform={isServicesOpen ? "rotate(180deg)" : "rotate(0)"} color="verde" />
+        Serviços{" "}
+        <ChevronDownIcon
+          transition="500ms all"
+          transform={isServicesOpen ? "rotate(180deg)" : "rotate(0)"}
+          color="verde"
+        />
         {isServicesOpen && (
           <Box
             display={{ base: "none", lg: "block" }}
@@ -45,7 +50,12 @@ export function Menu() {
         as="a"
         href="#"
       >
-        Links úteis <ChevronDownIcon transition="500ms all" transform={isLinksOpen ? "rotate(180deg)" : "rotate(0)"} color="verde" />
+        Links úteis{" "}
+        <ChevronDownIcon
+          transition="500ms all"
+          transform={isLinksOpen ? "rotate(180deg)" : "rotate(0)"}
+          color="verde"
+        />
         {isLinksOpen && (
           <Box
             display={{ base: "none", lg: "block" }}
