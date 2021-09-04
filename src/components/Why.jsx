@@ -34,26 +34,26 @@ export function Why() {
         <Wrap pl={4} flex={1} justify="space-evenly">
           <Card
             title="Agilidade"
-            desc="Uso intenso de tecnologia permitindo a velocidade de transmissão de dados."
+            desc="Uso intenso de tecnologia permitindo a velocidade da informação e interatividade maior com o cliente."
           >
             <AgiSvg />
           </Card>
           <Card
             title="Precisão"
-            desc="Exatidão e padronização no processamento das informações.
+            desc="Exatidão e padronização no processamento das informações utilizando um ecossistema contábil digital.
 "
           >
             <PreSvg />
           </Card>
           <Card
             title="Segurança"
-            desc="Firmeza e estabilidade em todos os processos."
+            desc="Firmeza e estabilidade em todos os processos realizados "
           >
             <SecSvg />
           </Card>
           <Card
             title="Economia"
-            desc="Redução do tempo e de gastos com atividades manuais."
+            desc="Redução intensa de tempo e de gastos com atividades manuais."
           >
             <EcoSvg />
           </Card>
