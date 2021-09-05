@@ -30,7 +30,7 @@ export const theme = extendTheme({
       baseStyle: {
         color: "white",
         fontWeight: "400",
-        fontSize: 14,
+        fontSize: 12,
         borderRadius: 10,
         _hover: {
           transform: "scale(1.02);",
@@ -43,7 +43,7 @@ export const theme = extendTheme({
   styles: {
     global: {
       button: {
-        fontSize: "14px !important",
+        fontSize: "13px",
       },
       svg: {
         display: "inline",

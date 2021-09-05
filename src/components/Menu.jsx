@@ -77,6 +77,7 @@ export function Menu() {
         Fale com a gente
       </Text>
       <Button
+      fontSize={13}
         h={50}
         px={8}
         color="white"

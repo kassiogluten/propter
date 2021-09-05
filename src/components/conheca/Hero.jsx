@@ -15,10 +15,8 @@ import {
   CrescimentoSvg,
   FundacaoSvg,
 } from "../../icons";
-//import { useMyContext } from "../contexts/Context";
 
 export function Hero() {
-  //  const { isModalOpen } = useMyContext();
   return (
     <Box align="center" w="100%" bg="cinza">
       <Flex

@@ -9,7 +9,7 @@ import { VideoHistory } from "../components/History";
 import { Team } from "../components/conheca/Team";
 import { Testimonials } from "../components/Testimonials";
 
-export default function Home() {
+export default function Conheca() {
   return (
     <div>
       <Head>

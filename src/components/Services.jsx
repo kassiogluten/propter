@@ -50,7 +50,7 @@ export function Services() {
       que trabalhamos para melhorar a sua experiência de contabilidade da sua
       empresa."
           >
-            <ContabilidadeSvg />
+            <ContabilidadeSvg color="#2659FF" />
           </Card>
           <Card
             title="Seguros"
