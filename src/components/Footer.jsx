@@ -70,16 +70,16 @@ export function Footer() {
               h="2px"
               bgGradient="linear(to-r, verde -20%, azul 120%)"
             />
-            <Text as="a" href="#" pt={4}>
+            <Text as="a" href="/contabilidade" pt={4}>
               Contabilidade
             </Text>
-            <Text as="a" href="#">
+            <Text as="a" href="seguros">
               Seguros
             </Text>
-            <Text as="a" href="#">
+            <Text as="a" href="/emprestimos-e-financiamentos">
               Financiamentos
             </Text>
-            <Text as="a" href="#">
+            <Text as="a" href="/maquina-de-cartao">
               Máquina de cartão
             </Text>
           </VStack>

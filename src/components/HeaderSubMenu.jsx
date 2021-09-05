@@ -24,7 +24,7 @@ export function MenuServices() {
       justify="space-between"
     >
       <CloseButton pos="absolute" right={4} top={4}/>
-      <VStack textAlign="start" align="start" py={8}>
+      <VStack as="a" href="/contabilidade" textAlign="start" align="start" py={8}>
         <CalculatorSvg />
         <Heading fontSize={16}>Contabilidade</Heading>
         <Text
@@ -38,7 +38,7 @@ export function MenuServices() {
           empresa.
         </Text>
       </VStack>
-      <VStack textAlign="start" align="start" py={8}>
+      <VStack as="a" href="/seguros" textAlign="start" align="start" py={8}>
         <MoneySvg />
         <Heading fontSize={16}>Seguros</Heading>
         <Text
@@ -52,7 +52,7 @@ export function MenuServices() {
           orçamento.
         </Text>
       </VStack>
-      <VStack textAlign="start" align="start" py={8}>
+      <VStack as="a" href="/emprestimos-e-financiamentos" textAlign="start" align="start" py={8}>
         <CarSvg />
         <Heading fontSize={16}>Empréstimo/Financiamentos</Heading>
         <Text
@@ -65,7 +65,7 @@ export function MenuServices() {
           Seu financiamento imobiliário com a melhor taxa do mercado.
         </Text>
       </VStack>
-      <VStack textAlign="start" align="start" py={8}>
+      <VStack as="a" href="/maquina-de-cartao" textAlign="start" align="start" py={8}>
         <CardSvg />
         <Heading fontSize={16}>Máquinas de cartão</Heading>
         <Text
