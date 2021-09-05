@@ -24,11 +24,10 @@ export function Testimonials() {
     <Box
       align="center"
       w="100%"
-      bg="cinza"
-      color="white"
-      bgImage="bg-depoimentos.svg"
+      bg="white"
+      color="cinza"
       bgRepeat="no-repeat"
-      bgPos="top right"
+      bgPos="top center"
       id="blog"
       pos="relative"
     >
