@@ -12,6 +12,8 @@ import React, { useState } from "react";
 
 import { useForm } from "react-hook-form";
 
+import axios from "axios";
+
 export function ContactForm({ color }) {
   const {
     register,
@@ -27,14 +29,39 @@ export function ContactForm({ color }) {
   async function handleSendMessage(data) {
     setIsLoading(true);
 
-    toast({
-      title: "OBRIGADO !",
-      description: "Sua mensagem foi enviada.",
-      status: "success",
-      isClosable: true,
-      position: "top",
-      onCloseComplete: () => setIsLoading(false),
-    });
+    try {
+      const { Nome, Email, Telefone, Mensagem } = data;
+
+      await axios.post("/api/mail/contact", {
+        name: Nome,
+        phone: Telefone,
+        email: Email,
+        message: Mensagem,
+      });
+
+      toast({
+        title: "Obrigado.",
+        description: "Sua mensagem foi enviada",
+        status: "success",
+        isClosable: true,
+        position: "top",
+      });
+
+      reset({ Nome: "", Telefone: "" });
+
+      setIsLoading(false);
+    } catch (err) {
+      setIsLoading(false);
+      toast({
+        title: "Ocorreu um erro.",
+        description:
+          "Por favor, tente novamente mais tarde ou entre em contato com a gente através do WhatsApp.",
+        status: "error",
+        isClosable: true,
+        position: "top",
+      });
+      console.log(err);
+    }
   }
   return (
     <VStack

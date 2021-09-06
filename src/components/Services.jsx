@@ -59,7 +59,7 @@ export function Services() {
           >
             <SegurosSvg color="#2659FF" />
           </Card>
-          <Card link="/"
+          <Card link="/emprestimos-e-financiamentos"
             title="Empréstimos "
             desc="Conheça o melhor crédito do mercado, que pode te dar aquela força no orçamento."
           >
