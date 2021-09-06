@@ -14,20 +14,41 @@ import { Swiper, SwiperSlide } from "swiper/react";
 SwiperCore.use([Navigation]);
 
 const posts = [
-  { name: "Lucas Rangel", img: "/lucas.jpg" },
-  { name: "Heitor Salamanca", img: "/lucas.jpg" },
-  { name: "Vitor Bonho", img: "/lucas.jpg" },
-  { name: "Magneto Xavier", img: "/lucas.jpg" },
+  {
+    name: "Lucas Rangel",
+    job: "Fundador e CEO da Gamepad ",
+    img: "/lucas.jpg",
+    msg: "A parceria do Propter com a Gamepad a cada ano comemoramos mais resultados. A Propter é a maior autoridade em contabilidade consultiva, sempre com ótimo atendimento.",
+  },
+  {
+    name: "Magno Dias",
+    job: "Proprietário da Suricato Agência",
+    img: "/magno.jpg",
+    msg: "A forma como a Propter mudou a Suricato foi sensacional.  Deixamos de ter apenas um contator e hoje temos um grande parceiro de negócios.",
+  },
+  {
+    name: "Vitor Bonho",
+    job: "Designer UI/UX",
+    img: "https://www.arenaxbox.com.br/wp-content/uploads/2020/07/vitor.jpg",
+    msg: "A parceria do Propter com a Gamepad a cada ano comemoramos mais resultados. A Propter é a maior autoridade em contabilidade consultiva, sempre com ótimo atendimento.",
+  },
+  {
+    name: "Kassio Gluten",
+    job: "Programador Frontend",
+    img: "https://github.com/kassiogluten.png",
+    msg: "A forma como a Propter mudou a Suricato foi sensacional.  Deixamos de ter apenas um contator e hoje temos um grande parceiro de negócios.",
+  },
 ];
-export function Testimonials() {
+export function Testimonials({ bg, color }) {
   return (
     <Box
       align="center"
       w="100%"
-      bg="white"
-      color="cinza"
+      bg={bg}
+      color={color}
+      bgImage={bg === "cinza" ? "/bg-depoimentos.svg" : "none"}
       bgRepeat="no-repeat"
-      bgPos="top center"
+      bgPos="top right"
       id="blog"
       pos="relative"
     >
@@ -76,38 +97,53 @@ const Posts = ({ posts }) => (
     {posts.map((post) => (
       <SwiperSlide key={post.name}>
         <Flex
-          px={4}
-          _hover={{ cursor: "pointer", filter: "brightness(1.25)" }}
+          px={6}
+          
           w="100%"
           h={{ base: "75vw", md: "420px" }}
           flexDir="column"
         >
-          <Grid
-            py={8}
-            w={300}
-            templateColumns="auto 1fr"
-            templateRows="1fr 1fr"
+          <Flex
+            sx={{
+              background: "url('/bg-depoimento.svg') no-repeat top left , #fff"
+            }}
+            _hover={{ cursor: "grab"}}
+            mt={4}
+            boxShadow="0px 0px 25px rgba(0, 0, 0, 0.1)"
+            borderRadius={20}
+            w="full"
+            h="300"
+            justify="space-between"
+            flexDir="column"
+            px={8}
+            pt={32}
           >
-            <GridItem colSpan="1" rowSpan="2" px={2}>
-              <Image
-                borderRadius="5px"
-                width={45}
-                height={45}
-                alt="Depoimento"
-                src={post.img}
-              />
-            </GridItem>
-            <GridItem colSpan="1" rowSpan="1">
-              <Text textAlign="start">{post.name}</Text>
-            </GridItem>
-            <GridItem colSpan="1" rowSpan="1">
-              <Text textAlign="start" color="texto">
-                Fundador e CEO da Gamepad
-              </Text>
-            </GridItem>
-          </Grid>
-
-          <Box borderRadius={20} bg="#323C43" w="full" h="300" />
+            <Text color="cinza" textAlign="start">{post.msg}</Text>
+            <Grid
+              py={8}
+              w={300}
+              templateColumns="auto 1fr"
+              templateRows="1fr 1fr"
+            >
+              <GridItem colSpan="1" rowSpan="2" px={2}>
+                <Image
+                  borderRadius="5px"
+                  width={45}
+                  height={45}
+                  alt="Depoimento"
+                  src={post.img}
+                />
+              </GridItem>
+              <GridItem colSpan="1" rowSpan="1">
+                <Text color="cinza" textAlign="start">{post.name}</Text>
+              </GridItem>
+              <GridItem colSpan="1" rowSpan="1">
+                <Text textAlign="start" color="texto">
+                  {post.job}
+                </Text>
+              </GridItem>
+            </Grid>
+          </Flex>
         </Flex>
       </SwiperSlide>
     ))}

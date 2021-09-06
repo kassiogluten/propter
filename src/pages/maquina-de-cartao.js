@@ -43,7 +43,7 @@ export default function Home() {
         desc3="Você simula suas taxas em tempo real com custo comprador."
         color="#21D97A"
       />
-      <Testimonials />
+      <Testimonials bg="white" color="cinza" />
       <Contact color="verde" />
       <Footer />
     </div>

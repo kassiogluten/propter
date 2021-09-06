@@ -69,7 +69,7 @@ export default function Home() {
         color={"#2659FF"}
       />
       <Services />
-      <Testimonials />
+      <Testimonials bg="white" color="cinza" />
       <Contact color="azul" />
       <Footer />
     </div>

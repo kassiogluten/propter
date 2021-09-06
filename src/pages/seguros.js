@@ -42,7 +42,7 @@ export default function Home() {
         desc3="Nossa equipe de atendimento entrará em contato e agendará uma reunião para apresentar a Propter."
         color="#2659FF"
       />
-      <Testimonials />
+      <Testimonials bg="white" color="cinza" />
       <Contact color="azul" />
       <Footer />
     </div>

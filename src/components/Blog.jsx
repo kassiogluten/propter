@@ -33,27 +33,27 @@ const post = [
     title:
       "Zara vai ampliar aposta no digital e pode fechar até 700 lojas no mundo",
     img: "/blog3.jpg",
-    cat: "Notícias",
-  },
-  {
-    title:
-      "Ambev fecha compra de mil veículos elétricos",
-    img: "/blog4.jpg",
-    cat: "Notícias",
-  },
-  {
-    title:
-      "CEO5 da Volkswagen estreia no Twitter e provoca Elon Musk, da Tesla Laís Olivia Castro",
-    img: "https://i.pravatar.cc/90",
     cat: "Dicas",
     color:"verde",
   },
   {
     title:
-      "CEO6 da Volkswagen estreia no Twitter e provoca Elon Musk, da Tesla Laís Olivia Castro",
-    img: "https://i.pravatar.cc/90",
+      "Ambev fecha compra de mil veículos elétricos",
+    img: "/blog4.jpg",
     cat: "Alerta",
     color:"red",
+  },
+  {
+    title:
+      "CEO5 da Volkswagen estreia no Twitter e provoca Elon Musk, da Tesla Laís Olivia Castro",
+    img: "https://picsum.photos/260/160",
+    cat: "Notícias",
+  },
+  {
+    title:
+      "CEO6 da Volkswagen estreia no Twitter e provoca Elon Musk, da Tesla Laís Olivia Castro",
+    img: "https://picsum.photos/261/160",
+    cat: "Notícias",
   },
 ];
 

@@ -22,7 +22,7 @@ export default function Conheca() {
       <Why />
       <VideoHistory />
       <Team />
-      <Testimonials />
+      <Testimonials bg="white" color="cinza" />
       <Footer />
     </div>
   );

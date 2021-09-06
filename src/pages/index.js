@@ -24,7 +24,7 @@ export default function Home() {
       <Trajectory />
       <VideoHistory />
       <Services />
-      <Testimonials />
+      <Testimonials bg="cinza" color="white" />
       <Blog />
       <Footer />
     </div>
