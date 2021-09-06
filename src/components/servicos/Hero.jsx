@@ -46,7 +46,7 @@ export function Hero({ title, desc, color, children }) {
             >
               {desc}
             </Text>
-            <Button colorScheme="none" fontSize={13}
+            <Button as="a" href="#contato"  colorScheme="none" fontSize={13}
               h={50}
               ml={{ base: 0, md: "95px" }}
               maxW={350}

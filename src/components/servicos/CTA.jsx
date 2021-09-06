@@ -30,7 +30,7 @@ export function CTA({ title, color,img, children }) {
             }}
           />
           {children}
-          <Button fontSize={12} h={50} w="100%" maxW={350} bg={color} color="white">
+          <Button colorScheme="none" as="a" href="#contato" fontSize={12} h={50} w="100%" maxW={350} bg={color} color="white">
             Venha conversar com a gente
           </Button>
         </VStack>

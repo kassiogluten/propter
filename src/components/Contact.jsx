@@ -19,7 +19,7 @@ import { ContactForm } from "./ContactForm";
 export function Contact({color}) {
   return (
     <>
-      <Box align="center" w="100%" bg="cinza">
+      <Box align="center" w="100%" bg="cinza" id="contato">
         <Flex
           align="center"
           flex={1}
