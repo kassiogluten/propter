@@ -31,7 +31,7 @@ export function Banner() {
         <Text my={8} maxW={370} fontSize={{ base: 24, sm: 36 }}>
           Contabilidade Digital Consultiva para <strong>seu negócio.</strong>
         </Text>
-        <Button h={50} px={{base:2, xs:8}} color="white" colorScheme="none" bg="azul">
+        <Button as="a" href="#solucoes" h={50} px={{base:2, xs:8}} color="white" colorScheme="none" bg="azul">
           Conheça nossas soluções
         </Button>
       </Flex>

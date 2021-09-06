@@ -22,8 +22,7 @@ export function Menu() {
       <Text
         pos="relative"
         onClick={() => setIsServicesOpen(!isServicesOpen)}
-        as="a"
-        href="#"
+        _hover={{cursor:'copy'}}
       >
         Serviços{" "}
         <ChevronDownIcon
@@ -47,8 +46,7 @@ export function Menu() {
       <Text
         pos="relative"
         onClick={() => setIsLinksOpen(!isLinksOpen)}
-        as="a"
-        href="#"
+        _hover={{cursor:'copy'}}
       >
         Links úteis{" "}
         <ChevronDownIcon
@@ -70,14 +68,14 @@ export function Menu() {
         )}
       </Text>
 
-      <Text as="a" href="#">
+      <Text as="a" href="/blog">
         Nosso blog
       </Text>
-      <Text as="a" href="#">
+      <Text as="a" href="/contato">
         Fale com a gente
       </Text>
       <Button
-      fontSize={13}
+        fontSize={13}
         h={50}
         px={8}
         color="white"
@@ -125,13 +123,18 @@ export const MenuTop = () => (
     </Wrap>
     <Wrap>
       <HStack px={2}>
-        <Text fontSize={14} opacity={0.6}>
+        <Text
+          as="a"
+          href="mailto:contato@proter.com.br"
+          fontSize={14}
+          color="texto"
+        >
           contato@proter.com.br
         </Text>
         <MailSvg />
       </HStack>
       <HStack px={2}>
-        <Text fontSize={14} opacity={0.6}>
+        <Text as="a" href="tel:33 3321-2121" fontSize={14} color="texto">
           (33) 3321-2121
         </Text>
         <PhoneSvg />

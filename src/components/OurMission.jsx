@@ -14,7 +14,7 @@ import React from "react";
 
 export function OurMission() {
   return (
-    <Box align="center" w="100%">
+    <Box align="center" w="100%" bg="white">
       <Flex
         p="5rem 1rem"
         align="center"
@@ -66,7 +66,7 @@ export function OurMission() {
             ferramentas digitais ágeis e entregando mais valor, além de auxiliar
             os empreendedores nas tomadas de decisões.
           </Text>
-          <Button color="cinza" variant="link" as="a" href="#">
+          <Button color="cinza" variant="link" as="a" href="/conheca">
             Conheça a Propter
             <ChevronRightIcon color="azul" boxSize="20px" />
           </Button>

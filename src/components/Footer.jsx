@@ -39,7 +39,7 @@ export function Footer() {
         justify="space-between"
         flexDir={{ base: "column", lg: "row" }}
       >
-        <Box flex={1} pb={8}>
+        <Box as="a" href="/" flex={1} pb={8}>
           <LogoVerticalSvg />
         </Box>
         <Wrap flex={2.5} w="full" justify="space-between">
@@ -53,13 +53,10 @@ export function Footer() {
             <Text as="a" href="/conheca" pt={4}>
               Conheça a Propter
             </Text>
-            <Text as="a" href="#">
-              Trabalhe conosco
-            </Text>
-            <Text as="a" href="#">
+            <Text as="a" href="/links">
               Links úteis
             </Text>
-            <Text as="a" href="#">
+            <Text as="a" href="/blog">
               Nosso blog
             </Text>
           </VStack>
@@ -103,19 +100,18 @@ export function Footer() {
               h="2px"
               bgGradient="linear(to-r, verde -20%, azul 120%)"
             />
-            <Text as="a" href="#" pt={4}>
+            <Text as="a" href="mailto:contato@proter.com.br" pt={4}>
               contato@proter.com.br
             </Text>
-            <Text as="a" href="#">
+            <Text as="a" href="tel:33 3321-2121">
               (33) 3321-2121
             </Text>
-            <Button
+            <Button bgGradient="linear(to-r, azul, verde)"
               colorScheme="none"
-              fontSize="13px"
+              fontSize="12px"
               w="full"
-              bg="azul"
               as="a"
-              href="#"
+              href="/contato"
             >
               Fale com a gente
             </Button>
@@ -131,7 +127,7 @@ export function Footer() {
         justify="space-evenly"
       >
         <Text>©2021 Propter - Todos os direitos reservados</Text>
-        <Text>
+        <Text target="_blank" as="a" href="https://www.instagram.com/suricato.agencia/">
           Feito com <HeartSvg /> por Suricato Agência
         </Text>
       </Flex>

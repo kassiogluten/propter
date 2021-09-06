@@ -103,21 +103,21 @@ export function MenuLinks() {
       justify="space-between"
     >
       <CloseButton pos="absolute" right={4} top={4}/>
-      <VStack textAlign="start" align="start" py={8}>
+      <VStack as="a" href="/links" textAlign="start" align="start" py={8}>
         <PublicSvg />
         <Heading fontSize={16}>Públicos e Governo</Heading>
         <Text maxW={230} fontSize={14} lineHeight={"24px"} color="#7D8489" pr={4}>
           Acesse para visualizar os sites relacionados ao governo.
         </Text>
       </VStack>
-      <VStack textAlign="start" align="start" py={8}>
+      <VStack as="a" href="/links" textAlign="start" align="start" py={8}>
         <JournalSvg />
         <Heading fontSize={16}>Jornais por estado</Heading>
         <Text maxW={230} fontSize={14} lineHeight={"24px"} color="#7D8489" pr={4}>
           Acesse as principais notícias separadas por estado.
         </Text>
       </VStack>
-      <VStack textAlign="start" align="start" py={8}>
+      <VStack as="a" href="/links" textAlign="start" align="start" py={8}>
         <WriteSvg />
         <Heading fontSize={16}>Ministérios e Secretarias</Heading>
         <Text maxW={230} fontSize={14} lineHeight={"24px"} color="#7D8489" pr={4}>
@@ -125,7 +125,7 @@ export function MenuLinks() {
           público.
         </Text>
       </VStack>
-      <VStack textAlign="start" align="start" py={8}>
+      <VStack as="a" href="/links" textAlign="start" align="start" py={8}>
         <LinkSvg />
         <Heading fontSize={16}>Utilidades e outros</Heading>
         <Text maxW={230} fontSize={14} lineHeight={"24px"} color="#7D8489" pr={4}>
