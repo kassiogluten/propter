@@ -10,7 +10,7 @@ export default function Custom404() {
         <title>ERRO 404</title>
       </Head>
       <Header />
-      <Box align="center" w="100%" bg="blue.100">
+      <Box align="center" w="100%" bg="cinza" color="white">
         <Flex
           p="5rem 1rem"
           align="center"
@@ -20,7 +20,7 @@ export default function Custom404() {
           flexDir="column"
         >
           <Heading>Página não encontrada</Heading>
-          <Button bg="azul" as="a" href="/">
+          <Button colorScheme="none" bg="azul" as="a" href="/">
             Voltar
           </Button>
         </Flex>
