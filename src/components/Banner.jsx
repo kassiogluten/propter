@@ -13,7 +13,8 @@ export function Banner() {
       <Flex
         transform="translateY(-50%)"
         flexDir="column"
-        p="3rem"
+        px={{ base: "1rem", sm: "3rem" }}
+        py={{ base: "2rem", sm: "3rem" }}
         mx="1rem"
         mb={-100}
         align="start"
@@ -31,7 +32,16 @@ export function Banner() {
         <Text my={8} maxW={370} fontSize={{ base: 24, sm: 36 }}>
           Contabilidade Digital Consultiva para <strong>seu negócio.</strong>
         </Text>
-        <Button as="a" href="#solucoes" h={50} px={{base:2, xs:8}} color="white" colorScheme="none" bg="azul">
+        <Button w={{base:"full",sm:"fit-content"}}
+        fontSize={13}
+          as="a"
+          href="#solucoes"
+          h={50}
+          px={{ base: 2, xs: 8 }}
+          color="white"
+          colorScheme="none"
+          bg="azul"
+        >
           Conheça nossas soluções
         </Button>
       </Flex>

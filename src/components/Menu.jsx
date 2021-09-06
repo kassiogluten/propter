@@ -10,7 +10,7 @@ import {
   TwitterSvg,
 } from "../icons";
 
-export function Menu() {
+export function Menu({setModal}) {
   const { setIsServicesOpen, setIsLinksOpen, isServicesOpen, isLinksOpen } =
     useMyContext();
 
@@ -74,7 +74,7 @@ export function Menu() {
       <Text as="a" href="/contato">
         Fale com a gente
       </Text>
-      <Button
+      <Button onClick={()=>setModal(true)}
         fontSize={13}
         h={50}
         px={8}

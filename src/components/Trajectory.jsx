@@ -156,7 +156,7 @@ const Dot = ({ color }) => (
 );
 
 const TimeLine = () => (
-  <Box pos="absolute">
+  <Box left="48%" pos="absolute">
     <Box pt={{ base: "130px", md: 28 }} width="20" height="1555">
       <Dot color="#2659FF" />
       <Box ml="6px" width="1" height={{ base: 380, md: 260 }} bg="#DCE3FF" />

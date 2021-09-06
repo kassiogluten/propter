@@ -12,20 +12,30 @@ import {
   useDisclosure,
   VStack,
   DarkMode,
-  Link
+  Link,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  Button,
+  Wrap,
 } from "@chakra-ui/react";
 
-
 import { FaThList } from "react-icons/fa";
-import React from "react";
+import React, { useState } from "react";
 import { LogoSvg } from "../icons";
 import { Menu, MenuTop } from "./Menu";
 import { MenuLinks, MenuServices } from "./HeaderSubMenu";
 import { useMyContext } from "../contexts/Context";
+import { ModalLinks } from "./ModalLinks";
 
 export function Header() {
   const { isServicesOpen, isLinksOpen } = useMyContext();
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [modal, setModal] = useState(false);
   return (
     <header>
       <DarkMode>
@@ -63,9 +73,11 @@ export function Header() {
             maxW={1200}
             justify="space-between"
           >
-            <Link as="a" href="/"><LogoSvg /></Link>
+            <Link as="a" href="/">
+              <LogoSvg />
+            </Link>
             <HStack display={{ base: "none", lg: "flex" }} spacing={6}>
-              <Menu />
+              <Menu setModal={setModal} />
             </HStack>
             <IconButton onClick={onOpen} display={{ base: "flex", lg: "none" }}>
               <FaThList />
@@ -87,7 +99,7 @@ export function Header() {
 
               <DrawerBody onClick={onClose}>
                 <VStack spacing={10}>
-                  <Menu />
+                <Menu setModal={setModal} />
                   <Flex display={{ base: "flex", md: "none" }}>
                     <MenuTop />
                   </Flex>
@@ -96,6 +108,7 @@ export function Header() {
             </DrawerContent>
           </Drawer>
         </Box>
+        <ModalLinks modal={modal} setModal={setModal} />
       </DarkMode>
     </header>
   );
