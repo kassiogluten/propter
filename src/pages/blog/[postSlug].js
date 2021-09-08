@@ -6,12 +6,24 @@ import { getApolloClient } from "../../lib/apollo-client";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { Content } from "../../components/blog/Content";
+import { Text } from "@chakra-ui/react";
 
 export default function Post({ post }) {
   return (
     <>
       <Head>
         <title>{post.title} | Blog Propter</title>
+        <meta property="og:title" content={post.title + " | Blog Propter"} />
+        <meta name="description" content={post.adicionais?.subtitulo || null} />
+        <meta
+          property="og:description"
+          content={post.adicionais?.subtitulo || null}
+        />
+        <meta
+          property="og:image"
+          content={post.featuredImage?.node.mediaItemUrl}
+          key="ogimage"
+        />
       </Head>
       <Header />
 
