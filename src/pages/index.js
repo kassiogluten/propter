@@ -19,6 +19,18 @@ export default function Home({ posts }) {
     <div>
       <Head>
         <title>Propter | Gestão contábil</title>
+        <meta property="og:title" content="Propter | Gestão contábil" />
+        <meta
+          name="description"
+          content="AJUDAMOS o seu negócio a prosperar através da contabilidade digital consultiva.
+Venha ser Propter"
+        />
+        <meta
+          property="og:description"
+          content="AJUDAMOS o seu negócio a prosperar através da contabilidade digital consultiva.
+          Venha ser Propter"
+        />
+        <meta property="og:image" content="/logo.svg" key="ogimage" />
       </Head>
       <Header />
       <Banner />

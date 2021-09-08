@@ -14,6 +14,16 @@ export default function Conheca() {
     <div>
       <Head>
         <title>Conheça a Propter</title>
+        <meta property="og:title" content="Conheça a Propter" />
+        <meta
+          name="description"
+          content="Bem-vindo à Propter. Somos mais que um escritório de contabilidade."
+        />
+        <meta
+          property="og:description"
+          content="Bem-vindo à Propter. Somos mais que um escritório de contabilidade."
+        />
+        <meta property="og:image" content="escritorio.jpg" key="ogimage" />
       </Head>
       <Header />
       <Hero />

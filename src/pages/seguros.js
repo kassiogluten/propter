@@ -14,6 +14,16 @@ export default function Home() {
     <div>
       <Head>
         <title>Seguros | Propter</title>
+        <meta property="og:title" content="Seguros" />
+        <meta
+          name="description"
+          content="Conheça nossa gama de produtos e serviços com proteções dos mais variados tipos, para você, sua família e empresa, além dos maisvariados produtos financeiros."
+        />
+        <meta
+          property="og:description"
+          content="Conheça nossa gama de produtos e serviços com proteções dos mais variados tipos, para você, sua família e empresa, além dos maisvariados produtos financeiros."
+        />
+        <meta property="og:image" content="/servicos.jpg" key="ogimage" />
       </Head>
       <Header />
       <Hero
