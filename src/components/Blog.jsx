@@ -3,59 +3,18 @@ import {
   Text,
   Box,
   Flex,
-  Heading,
-  Wrap,
-  WrapItem,
-  HStack,
   VStack,
   Badge,
 } from "@chakra-ui/react";
 import Image from "next/image";
 
+
+
 import SwiperCore, { Pagination } from "swiper/core";
 import { Swiper, SwiperSlide } from "swiper/react";
 SwiperCore.use([Pagination]);
 
-const post = [
-  {
-    title:
-      "CEO da Volkswagen estreia no Twitter e provoca Elon Musk, da Tesla Laís Olivia Castro",
-    img: "/blog1.jpg",
-    cat: "Notícias",
-  },
-  {
-    title: "Cinco dicas para ajudar suas finanças pessoais em 2021",
-    img: "/blog2.jpg",
-    cat: "Notícias",
-  },
-  {
-    title:
-      "Zara vai ampliar aposta no digital e pode fechar até 700 lojas no mundo",
-    img: "/blog3.jpg",
-    cat: "Dicas",
-    color: "verde",
-  },
-  {
-    title: "Ambev fecha compra de mil veículos elétricos",
-    img: "/blog4.jpg",
-    cat: "Alerta",
-    color: "red",
-  },
-  {
-    title:
-      "CEO5 da Volkswagen estreia no Twitter e provoca Elon Musk, da Tesla Laís Olivia Castro",
-    img: "https://picsum.photos/260/160",
-    cat: "Notícias",
-  },
-  {
-    title:
-      "CEO6 da Volkswagen estreia no Twitter e provoca Elon Musk, da Tesla Laís Olivia Castro",
-    img: "https://picsum.photos/261/160",
-    cat: "Notícias",
-  },
-];
-
-export function Blog() {
+export function Blog({posts}) {
   return (
     <Box align="center" w="100%" pos="relative" bg="#F5F6FA">
       <Flex
@@ -80,13 +39,13 @@ export function Blog() {
         <Text pb={8} px={4} maxW={500} fontSize={{ base: 26, md: 36 }}>
           Confira as novidades
         </Text>
-        <Post />
+        <Post posts={posts} />
       </Flex>
     </Box>
   );
 }
 
-const Post = () => (
+const Post = ({posts}) => (
   <Swiper
     slidesPerView={"auto"}
     spaceBetween={0}
@@ -99,9 +58,9 @@ const Post = () => (
     }}
     className="Blog"
   >
-    {post.map((post) => (
-      <SwiperSlide key={post.title}>
-        <VStack
+    {posts.map((post) => (
+      <SwiperSlide key={post.slug}>
+        <VStack as="a" href={post.path}
           transition="all 200ms ease"
           _hover={{
             cursor: "pointer",
@@ -116,7 +75,7 @@ const Post = () => (
           minH={350}
         >
           <Box borderRadius={10} overflow="hidden">
-            <Image width={260} height={160} alt={post.title} src={post.img} />
+            <Image width={260} height={160} alt={post.title} src={post.featuredImage?.node.mediaItemUrl || '/logo.svg'} />
           </Box>
           <Badge
             lineHeight="200%"
@@ -128,7 +87,8 @@ const Post = () => (
             p="2px 7px 0"
             alignSelf="start"
           >
-            {post.cat}
+            {/* {post.cat} */}
+            Notícia
           </Badge>
           <Text fontSize={18} textAlign="left" color="cinza">
             {post.title}
@@ -138,3 +98,5 @@ const Post = () => (
     ))}
   </Swiper>
 );
+
+

@@ -11,7 +11,10 @@ import { Testimonials } from "../components/Testimonials";
 import { Trajectory } from "../components/Trajectory";
 import { Why } from "../components/Why";
 
-export default function Home() {
+import { getApolloClient } from "../lib/apollo-client";
+import { gql } from "@apollo/client";
+
+export default function Home({ posts }) {
   return (
     <div>
       <Head>
@@ -25,8 +28,58 @@ export default function Home() {
       <VideoHistory />
       <Services />
       <Testimonials bg="cinza" color="white" />
-      <Blog />
+      <Blog posts={posts} />
       <Footer />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const apolloClient = getApolloClient();
+
+  const data = await apolloClient.query({
+    query: gql`
+      {
+        generalSettings {
+          title
+          description
+        }
+        posts(first: 10000, where: { categoryName: "Propter" }) {
+          edges {
+            node {
+              id
+              excerpt
+              title
+              slug
+              featuredImage {
+                node {
+                  mediaItemUrl
+                }
+              }
+            }
+          }
+        }
+      }
+    `,
+  });
+
+  const posts = data?.data.posts.edges
+    .map(({ node }) => node)
+    .map((post) => {
+      return {
+        ...post,
+        path: `/blog/${post.slug}`,
+      };
+    });
+
+  const page = {
+    ...data?.data.generalSettings,
+  };
+
+  return {
+    props: {
+      page,
+      posts,
+    },
+  };
 }

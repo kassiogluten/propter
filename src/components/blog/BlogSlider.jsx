@@ -11,13 +11,11 @@ import {
   VStack,
 } from "@chakra-ui/react";
 
-import { posts } from "../posts";
-
 import SwiperCore, { Navigation } from "swiper/core";
 import { Swiper, SwiperSlide } from "swiper/react";
 SwiperCore.use([Navigation]);
 
-export function BlogSlider() {
+export function BlogSlider({posts}) {
   return (
     <Box align="center" w="100%" id="blog-slider" >
       <Flex  pos="relative"
@@ -51,7 +49,7 @@ spaceBetween={8}
         >
           <Flex 
             sx={{
-              background: `url('${post.img}') no-repeat center / cover`,
+              background: `url('${post.featuredImage?.node.mediaItemUrl}') no-repeat center / cover`,
             }}
             mt={4}
             borderRadius={15}
@@ -78,7 +76,7 @@ spaceBetween={8}
                 p="2px 7px 0"
                 alignSelf="start"
               >
-                {post.cat}
+                Notícias
               </Badge>
               <Text maxW={600}
                 fontWeight={600}
