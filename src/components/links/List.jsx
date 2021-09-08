@@ -1,7 +1,19 @@
-import { Box, Flex, Heading, Text, Wrap, Input, Badge } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  Text,
+  Wrap,
+  Input,
+  Badge,
+  Icon,
+  CloseButton,
+} from "@chakra-ui/react";
 
 import React, { useState } from "react";
 import { listOfLinks } from "./listOfLinks";
+import { RiSearchLine } from "react-icons/ri";
+import { FaWindowClose } from "react-icons/fa";
 
 export function List() {
   //console.log(Object.values(listOfLinks));
@@ -9,23 +21,65 @@ export function List() {
   const handleChange = (event) => setTyped(event.target.value);
 
   return (
-    <Box align="center" w="100%" bg="white">
+    <Box align="center" w="100%">
       <Flex
         align="center"
         textAlign="left"
         p="5rem 1rem"
         maxW={1200}
         flexDir="column"
+        bg="#F5F6FA"
       >
-        <Input h={50} borderRadius={10}
-          value={typed}
-          onChange={handleChange}
-          placeholder="Buscar jornais, ministérios, governo..."
-          size="sm"
-        />
+        <Heading pb={8} fontSize={24}>
+          Procurar links úteis
+        </Heading>
+        <Flex
+          w="full"
+          as="label"
+          flex="1"
+          p="4"
+          pr="8"
+          ml="6"
+          maxW={800}
+          alignSelf="center"
+          color="cinza"
+          position="relative"
+          bg="white"
+          borderRadius={10}
+          boxShadow="0px 19px 53px rgba(182, 182, 182, 0.25);"
+        >
+          <Input
+            value={typed}
+            onChange={handleChange}
+            variant="unstyled"
+            px="4"
+            mr="4"
+            placeholder="Buscar jornais, ministérios, governo..."
+            _placeholder={{ color: "gray.300" }}
+          />
+          <Icon color="azul" as={RiSearchLine} fontSize="20" />
+        </Flex>
+
         {typed !== "" && (
-          <Badge maxW={300} w="full" align="center" m="8px">Exibindo resultados para: {typed}</Badge>
+          <Text maxW={300} w="full" align="center" m={6}>
+            <Icon
+              _hover={{ cursor: "pointer", color: "red" }}
+              onClick={() => setTyped("")}
+              mr={2}
+              as={FaWindowClose}
+            />
+            Exibindo resultados para: <strong>{typed}</strong>
+          </Text>
         )}
+      </Flex>
+      <Flex
+        align="center"
+        textAlign="left"
+        p="5rem 1rem"
+        maxW={1200}
+        flexDir="column"
+        bg="white"
+      >
         {Object.keys(listOfLinks).map((value) => (
           <Flex
             borderBottom="1px solid #DCE3FF"
@@ -50,6 +104,7 @@ export function List() {
                 )
                 .map((link) => (
                   <Text
+                    key={link.url}
                     minW="40%"
                     w="fit-content"
                     as="a"
@@ -58,7 +113,6 @@ export function List() {
                     pr={2}
                     lineHeight="120%"
                     py={1}
-                    key={link.url}
                   >
                     - {link.title}
                   </Text>

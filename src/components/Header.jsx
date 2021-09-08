@@ -13,6 +13,7 @@ import {
   VStack,
   DarkMode,
   Link,
+  Stack,
   Modal,
   ModalOverlay,
   ModalContent,
@@ -22,6 +23,7 @@ import {
   ModalCloseButton,
   Button,
   Wrap,
+  DrawerFooter,
 } from "@chakra-ui/react";
 
 import { FaThList } from "react-icons/fa";
@@ -100,9 +102,9 @@ export function Header() {
               <DrawerBody onClick={onClose}>
                 <VStack spacing={10}>
                 <Menu setModal={setModal} />
-                  <Flex display={{ base: "flex", md: "none" }}>
+                  <Stack pt={8} spacing={8} maxW={200} flexDir="column">
                     <MenuTop />
-                  </Flex>
+                  </Stack>
                 </VStack>
               </DrawerBody>
             </DrawerContent>

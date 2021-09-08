@@ -24,8 +24,7 @@ const post = [
     cat: "Notícias",
   },
   {
-    title:
-      "Cinco dicas para ajudar suas finanças pessoais em 2021",
+    title: "Cinco dicas para ajudar suas finanças pessoais em 2021",
     img: "/blog2.jpg",
     cat: "Notícias",
   },
@@ -34,14 +33,13 @@ const post = [
       "Zara vai ampliar aposta no digital e pode fechar até 700 lojas no mundo",
     img: "/blog3.jpg",
     cat: "Dicas",
-    color:"verde",
+    color: "verde",
   },
   {
-    title:
-      "Ambev fecha compra de mil veículos elétricos",
+    title: "Ambev fecha compra de mil veículos elétricos",
     img: "/blog4.jpg",
     cat: "Alerta",
-    color:"red",
+    color: "red",
   },
   {
     title:
@@ -100,36 +98,29 @@ const Post = () => (
       },
     }}
     className="Blog"
-    
   >
     {post.map((post) => (
       <SwiperSlide key={post.title}>
-        <VStack 
+        <VStack
           transition="all 200ms ease"
           _hover={{
             cursor: "pointer",
-            filter: "brightness(1.15)",
-            boxShadow: "0 0 20px #00000011",
+            //filter: "brightness(1.15)",
+            transform: "scale(1.008)",
+            boxShadow: "0 0 20px #00000007",
           }}
           borderRadius={20}
-          p={'12px 16px'}
-          m={'10px 5px'}
+          p={"12px 16px"}
+          m={"10px 5px"}
           bg="white"
           minH={350}
-          maxW="300"
-          
         >
           <Box borderRadius={10} overflow="hidden">
-            <Image
-              width={260}
-              height={160}
-              alt={post.title}
-              src={post.img}
-            />
+            <Image width={260} height={160} alt={post.title} src={post.img} />
           </Box>
           <Badge
             lineHeight="200%"
-            bg={post.color || 'azul'}
+            bg={post.color || "azul"}
             color="white"
             fontSize="12px"
             fontWeight="400"

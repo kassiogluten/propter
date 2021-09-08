@@ -42,7 +42,7 @@ export function Footer() {
         <Box as="a" href="/" flex={1} pb={8}>
           <LogoVerticalSvg />
         </Box>
-        <Wrap flex={2.5} w="full" justify="space-between">
+        <Wrap flex={2.5} w="full" justify={{base:"center", sm:'space-between'}}>
           <VStack p={4} align="start" textAlign="start">
             <Heading fontSize={18}>Institucional</Heading>
             <Box
@@ -80,7 +80,7 @@ export function Footer() {
               Máquina de cartão
             </Text>
           </VStack>
-          <VStack p={4} align="start" textAlign="start">
+          <VStack p={4} align={{base:"center", sm:'start'}} textAlign="start">
             <Heading fontSize={18}>Redes sociais</Heading>
             <Box
               w="30px"
@@ -93,7 +93,7 @@ export function Footer() {
               <TwitterSvg />
             </Box>
           </VStack>
-          <VStack p={4} align="start" textAlign="start">
+          <VStack p={4} w={{base:"100%", sm:'unset'}} align={{base:"center", sm:'start'}} textAlign="start">
             <Heading fontSize={18}>Atendimento</Heading>
             <Box
               w="30px"

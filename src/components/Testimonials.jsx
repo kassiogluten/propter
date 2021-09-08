@@ -96,36 +96,37 @@ const Posts = ({ posts }) => (
   >
     {posts.map((post) => (
       <SwiperSlide key={post.name}>
-        <Flex
-          px={6}
-          
-          w="100%"
-          h={{ base: "75vw", md: "420px" }}
-          flexDir="column"
-        >
+        <Flex px={6} w="100%" flexDir="column">
           <Flex
             sx={{
-              background: "url('/bg-depoimento.svg') no-repeat top left , #fff"
+              background: "url('/bg-depoimento.svg') no-repeat top left , #fff",
             }}
-            _hover={{ cursor: "grab"}}
+            _hover={{ cursor: "grab" }}
             mt={4}
             boxShadow="0px 0px 25px rgba(0, 0, 0, 0.1)"
             borderRadius={20}
+            minH={300}
             w="full"
-            h="300"
             justify="space-between"
             flexDir="column"
             px={8}
             pt={32}
           >
-            <Text color="cinza" textAlign="start">{post.msg}</Text>
+            <Text color="cinza" textAlign="start">
+              {post.msg}
+            </Text>
             <Grid
               py={8}
               w={300}
-              templateColumns="auto 1fr"
-              templateRows="1fr 1fr"
+              templateColumns={{ base: "auto", md: "auto 1fr" }}
+              templateRows={{ base: "2fr 1fr auto", md: "1fr 1fr" }}
             >
-              <GridItem colSpan="1" rowSpan="2" px={2}>
+              <GridItem
+                h={42}
+                colSpan="1"
+                rowSpan={{ base: "1", md: "2" }}
+                pr={2} justifySelf="start"
+              >
                 <Image
                   borderRadius="5px"
                   width={45}
@@ -135,10 +136,12 @@ const Posts = ({ posts }) => (
                 />
               </GridItem>
               <GridItem colSpan="1" rowSpan="1">
-                <Text color="cinza" textAlign="start">{post.name}</Text>
+                <Text pt={1} color="cinza" textAlign="start">
+                  {post.name}
+                </Text>
               </GridItem>
               <GridItem colSpan="1" rowSpan="1">
-                <Text textAlign="start" color="texto">
+                <Text w={{base:150, sm:'full'}} textAlign="start" color="texto">
                   {post.job}
                 </Text>
               </GridItem>
