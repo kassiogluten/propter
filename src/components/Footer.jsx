@@ -39,10 +39,10 @@ export function Footer() {
         justify="space-between"
         flexDir={{ base: "column", lg: "row" }}
       >
-        <Box as="a" href="/" flex={1} pb={8}>
+        <Box alt="Voltar para pagina inicial" as="a" href="/" flex={1} pb={8}>
           <LogoVerticalSvg />
         </Box>
-        <Wrap flex={2.5} w="full" justify={{base:"center", sm:'space-between'}}>
+        <Flex flexWrap="wrap" flex={2.5} w="full" justify={{base:"center", sm:'space-between'}}>
           <VStack p={4} align="start" textAlign="start">
             <Heading fontSize={18}>Institucional</Heading>
             <Box
@@ -116,7 +116,7 @@ export function Footer() {
               Fale com a gente
             </Button>
           </VStack>
-        </Wrap>
+        </Flex>
       </Flex>
       <Flex
         id="copyright"
@@ -127,7 +127,7 @@ export function Footer() {
         justify="space-evenly"
       >
         <Text>©2021 Propter - Todos os direitos reservados</Text>
-        <Text target="_blank" as="a" href="https://www.instagram.com/suricato.agencia/">
+        <Text rel="noopener" target="_blank" as="a" href="https://www.instagram.com/suricato.agencia/">
           Feito com <HeartSvg /> por Suricato Agência
         </Text>
       </Flex>

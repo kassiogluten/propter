@@ -31,7 +31,7 @@ export function Why() {
             Porque a Propter
           </Heading>
         </Box>
-        <Wrap pl={4} flex={1} justify="space-evenly">
+        <Flex flexWrap="wrap" pl={4} flex={1} justify="space-evenly">
           <Card
             title="Agilidade"
             desc="Uso intenso de tecnologia permitindo a velocidade da informação e interatividade maior com o cliente."
@@ -57,7 +57,7 @@ export function Why() {
           >
             <EcoSvg />
           </Card>
-        </Wrap>
+        </Flex>
       </Flex>
     </Box>
   );

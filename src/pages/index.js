@@ -30,7 +30,7 @@ Venha ser Propter"
           content="AJUDAMOS o seu negócio a prosperar através da contabilidade digital consultiva.
           Venha ser Propter"
         />
-        <meta property="og:image" content="/logo.svg" key="ogimage" />
+        <meta property="og:image" content="/propter.jpg" key="ogimage" />
       </Head>
       <Header />
       <Banner />

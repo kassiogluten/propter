@@ -31,7 +31,7 @@ export function MenuServices() {
           maxW={230}
           fontSize={14}
           lineHeight={"24px"}
-          color="#7D8489"
+          color="#5D5459"
           pr={4}
         >
           Apresentamos uma nova forma de contabilidade para melhorar sua
@@ -45,7 +45,7 @@ export function MenuServices() {
           maxW={230}
           fontSize={14}
           lineHeight={"24px"}
-          color="#7D8489"
+          color="#5D5459"
           pr={4}
         >
           Conheça o melhor crédito do mercado, que pode te dar aquela força no
@@ -59,7 +59,7 @@ export function MenuServices() {
           maxW={230}
           fontSize={14}
           lineHeight={"24px"}
-          color="#7D8489"
+          color="#5D5459"
           pr={4}
         >
           Seu financiamento imobiliário com a melhor taxa do mercado.
@@ -72,7 +72,7 @@ export function MenuServices() {
           maxW={230}
           fontSize={14}
           lineHeight={"24px"}
-          color="#7D8489"
+          color="#5D5459"
           pr={4}
         >
           A Propter tem a máquina de cartão ideal para você que é empreendedor.
@@ -106,21 +106,21 @@ export function MenuLinks() {
       <VStack as="a" href="/links" textAlign="start" align="start" py={8}>
         <PublicSvg />
         <Heading fontSize={16}>Públicos e Governo</Heading>
-        <Text maxW={230} fontSize={14} lineHeight={"24px"} color="#7D8489" pr={4}>
+        <Text maxW={230} fontSize={14} lineHeight={"24px"} color="#5D5459" pr={4}>
           Acesse para visualizar os sites relacionados ao governo.
         </Text>
       </VStack>
       <VStack as="a" href="/links" textAlign="start" align="start" py={8}>
         <JournalSvg />
         <Heading fontSize={16}>Jornais por estado</Heading>
-        <Text maxW={230} fontSize={14} lineHeight={"24px"} color="#7D8489" pr={4}>
+        <Text maxW={230} fontSize={14} lineHeight={"24px"} color="#5D5459" pr={4}>
           Acesse as principais notícias separadas por estado.
         </Text>
       </VStack>
       <VStack as="a" href="/links" textAlign="start" align="start" py={8}>
         <WriteSvg />
         <Heading fontSize={16}>Ministérios e Secretarias</Heading>
-        <Text maxW={230} fontSize={14} lineHeight={"24px"} color="#7D8489" pr={4}>
+        <Text maxW={230} fontSize={14} lineHeight={"24px"} color="#5D5459" pr={4}>
           Acesse para visualizar os principais sites relacionados ao serviço
           público.
         </Text>
@@ -128,7 +128,7 @@ export function MenuLinks() {
       <VStack as="a" href="/links" textAlign="start" align="start" py={8}>
         <LinkSvg />
         <Heading fontSize={16}>Utilidades e outros</Heading>
-        <Text maxW={230} fontSize={14} lineHeight={"24px"} color="#7D8489" pr={4}>
+        <Text maxW={230} fontSize={14} lineHeight={"24px"} color="#5D5459" pr={4}>
           Acesse outros links de utilidade pública.
         </Text>
       </VStack>

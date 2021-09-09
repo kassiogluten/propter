@@ -29,13 +29,13 @@ const posts = [
   {
     name: "Vitor Bonho",
     job: "Designer UI/UX",
-    img: "https://www.arenaxbox.com.br/wp-content/uploads/2020/07/vitor.jpg",
+    img: "/vitor.jpg",
     msg: "A parceria do Propter com a Gamepad a cada ano comemoramos mais resultados. A Propter é a maior autoridade em contabilidade consultiva, sempre com ótimo atendimento.",
   },
   {
     name: "Kassio Gluten",
     job: "Programador Frontend",
-    img: "https://github.com/kassiogluten.png",
+    img: "kassio.jpg",
     msg: "A forma como a Propter mudou a Suricato foi sensacional.  Deixamos de ter apenas um contator e hoje temos um grande parceiro de negócios.",
   },
 ];

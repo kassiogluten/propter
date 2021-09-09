@@ -95,7 +95,7 @@ const CardBlue = ({ year, desc }) => (
       p={5}
       textAlign="start"
       fontSize={{ base: 12, md: 14 }}
-      color="#7D8489"
+      color="#5D5459"
     >
       {desc}
     </Box>
@@ -124,7 +124,7 @@ const CardGreen = ({ year, desc }) => (
       p={5}
       textAlign="start"
       fontSize={{ base: 12, md: 14 }}
-      color="#7D8489"
+      color="#5D5459"
     >
       {desc}
     </Box>

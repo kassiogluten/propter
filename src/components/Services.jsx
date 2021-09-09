@@ -42,7 +42,7 @@ export function Services() {
             </Text>
           </VStack>
         </Box>
-        <Wrap align="center" justify="space-between" flex={1} pt={8}>
+        <Flex flexWrap="wrap"  align="center" justify="space-between" flex={1} pt={8}>
           <Card
             full
             link="/contabilidade"
@@ -77,7 +77,7 @@ export function Services() {
           >
             <MaquinasSvg color="#21D97A" />
           </Card>
-        </Wrap>
+        </Flex>
       </Flex>
     </Box>
   );

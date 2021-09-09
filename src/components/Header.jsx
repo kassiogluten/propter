@@ -75,13 +75,13 @@ export function Header() {
             maxW={1200}
             justify="space-between"
           >
-            <Link as="a" href="/">
+            <Link alt="Voltar para pagina inicial" as="a" href="/">
               <LogoSvg />
             </Link>
             <HStack display={{ base: "none", lg: "flex" }} spacing={6}>
               <Menu setModal={setModal} />
             </HStack>
-            <IconButton onClick={onOpen} display={{ base: "flex", lg: "none" }}>
+            <IconButton aria-label="Menu de navegação" onClick={onOpen} display={{ base: "flex", lg: "none" }}>
               <FaThList />
             </IconButton>
             {isServicesOpen && <MenuServices />}
