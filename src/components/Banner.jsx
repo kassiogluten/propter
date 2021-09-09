@@ -1,4 +1,5 @@
 import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
+import Image from "next/image";
 
 import React from "react";
 
@@ -22,18 +23,26 @@ export function Banner() {
         maxW={1200}
         justify={{ base: "flex-end", sm: "space-evenly" }}
         h={470}
-        sx={{
-          background:
-            "linear-gradient(90deg, #041119 0%, rgba(4, 17, 25, 0) 53.78%, rgba(4, 17, 25, 0) 100%), url('/banner1.jpg') no-repeat center center / cover",
-        }}
-        borderRadius={15}
+        borderRadius={20}
         color="white"
+        overflow="hidden"
       >
-        <Text my={8} maxW={370} fontSize={{ base: 24, sm: 36 }}>
+        <Box
+          left={0}
+          zIndex={1}
+          w="full"
+          h="100%"
+          pos="absolute"
+          bgGradient="linear(to-r, #041119, transparent 30%) "
+        />
+        <Image objectFit="cover" quality={100} alt="Banner1" layout="fill" src="/banner1.jpg" />
+        <Text zIndex={2} my={8} maxW={370} fontSize={{ base: 24, sm: 36 }}>
           Contabilidade Digital Consultiva para <strong>seu negócio.</strong>
         </Text>
-        <Button w={{base:"full",sm:"fit-content"}}
-        fontSize={13}
+        <Button
+          zIndex={2}
+          w={{ base: "full", sm: "fit-content" }}
+          fontSize={13}
           as="a"
           href="#solucoes"
           h={50}

@@ -23,7 +23,7 @@ export default function Conheca() {
           property="og:description"
           content="Bem-vindo à Propter. Somos mais que um escritório de contabilidade."
         />
-        <meta property="og:image" content="escritorio.jpg" key="ogimage" />
+        <meta property="og:image" content="/escritorio.jpg" key="ogimage" />
       </Head>
       <Header />
       <Hero />
