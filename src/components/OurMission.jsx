@@ -23,7 +23,7 @@ export function OurMission() {
         justify="space-between"
         flexDir={{ base: "column-reverse", lg: "row" }}
       >
-        <Image alt="Nossa Missão"
+        <Image 
           height={560}
           width={560}
           alt="Nossa Missão"
