@@ -1,13 +1,12 @@
-import { Box, Flex, Heading, Text, VStack } from "@chakra-ui/react";
-
 import React from "react";
-//import { useMyContext } from "../contexts/Context";
+import { Box, Flex, Heading, Text, VStack } from "@chakra-ui/react";
+import Image from "next/image";
 
 export function VideoHistory() {
-  //  const { isModalOpen } = useMyContext();
   return (
     <Box align="center" w="100%" bg="cinza">
-      <Flex mt={16}
+      <Flex
+        mt={16}
         align="center"
         flex={1}
         maxW={1920}
@@ -43,16 +42,18 @@ export function VideoHistory() {
             Assista ao vídeo e conheça sobre nós.
           </Text>
         </VStack>
-        <Box onClick={()=>alert('Vídeo em produção')} _hover={{
+        <Box
+          pos="relative"
+          onClick={() => alert("Vídeo em produção")}
+          _hover={{
             cursor: "pointer",
             filter: "brightness(1.1)",
           }}
-          bgSize="cover"
-          bgPos="center"
-          bgImage="video.jpg"
           h={{ base: 300, md: 454 }}
           w="full"
-        ></Box>
+        >
+          <Image quality={95} objectFit="cover" src="/video.jpg" layout="fill" alt="Vídeo" />
+        </Box>
       </Flex>
     </Box>
   );

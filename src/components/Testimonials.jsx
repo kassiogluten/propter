@@ -1,13 +1,7 @@
 import React from "react";
-import {
-  Box,
-  Flex,
-  Grid,
-  GridItem,
-  Heading,
-  Text,
-  Image,
-} from "@chakra-ui/react";
+import { Box, Flex, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
+
+import Image from "next/image";
 
 import SwiperCore, { Navigation } from "swiper/core";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -35,7 +29,7 @@ const posts = [
   {
     name: "Kassio Gluten",
     job: "Programador Frontend",
-    img: "kassio.jpg",
+    img: "/kassio.jpg",
     msg: "A forma como a Propter mudou a Suricato foi sensacional.  Deixamos de ter apenas um contator e hoje temos um grande parceiro de negócios.",
   },
 ];
@@ -125,13 +119,14 @@ const Posts = ({ posts }) => (
                 h={42}
                 colSpan="1"
                 rowSpan={{ base: "1", md: "2" }}
-                pr={2} justifySelf="start"
+                mr={2}
+                justifySelf="start" borderRadius={5} overflow="hidden"
               >
-                <Image
+                <Image 
+                  alt={post.name}
                   borderRadius="5px"
                   width={45}
                   height={45}
-                  alt="Depoimento"
                   src={post.img}
                 />
               </GridItem>
@@ -141,7 +136,11 @@ const Posts = ({ posts }) => (
                 </Text>
               </GridItem>
               <GridItem colSpan="1" rowSpan="1">
-                <Text w={{base:150, sm:'full'}} textAlign="start" color="texto">
+                <Text
+                  w={{ base: 150, sm: "full" }}
+                  textAlign="start"
+                  color="texto"
+                >
                   {post.job}
                 </Text>
               </GridItem>

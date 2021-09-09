@@ -5,12 +5,13 @@ import {
   Flex,
   Heading,
   HStack,
-  Image,
   Text,
   VStack,
 } from "@chakra-ui/react";
 
 import React from "react";
+
+import Image from 'next/image'
 
 export function OurMission() {
   return (
@@ -22,14 +23,9 @@ export function OurMission() {
         justify="space-between"
         flexDir={{ base: "column-reverse", lg: "row" }}
       >
-        <Image
-          _before={{
-            content: '" "',
-            width: 70,
-            height: 70,
-            bg: "red",
-            zIndex: 99,
-          }}
+        <Image alt="Nossa Missão"
+          height={560}
+          width={560}
           alt="Nossa Missão"
           src="/nossa-missao.jpg"
         />
