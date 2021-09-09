@@ -35,7 +35,7 @@ export function Banner() {
           pos="absolute"
           bgGradient="linear(to-r, #041119, transparent 30%) "
         />
-        <Image priority objectFit="cover" quality={100} alt="Banner1" layout="fill" src="/banner1.jpg" />
+        <Image priority objectFit="cover" quality={90} alt="Banner1" layout="fill" src="/banner1.jpg" />
         <Text zIndex={2} my={8} maxW={370} fontSize={{ base: 24, sm: 36 }}>
           Contabilidade Digital Consultiva para <strong>seu negócio.</strong>
         </Text>
