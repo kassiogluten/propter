@@ -11,7 +11,7 @@ import {
 
 import React from "react";
 import { HowWorks01Svg, HowWorks02Svg, HowWorks03Svg } from "../../icons";
-//import { useMyContext } from "../contexts/Context";
+
 
 export function HowWorks({
   children,

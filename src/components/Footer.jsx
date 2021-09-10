@@ -4,7 +4,6 @@ import {
   Button,
   Flex,
   Heading,
-  Stack,
   Text,
   VStack,
   Wrap,
@@ -18,10 +17,10 @@ import {
   LogoVerticalSvg,
   TwitterSvg,
 } from "../icons";
-//import { useMyContext } from "../contexts/Context";
+import Link from 'next/link'
+
 
 export function Footer() {
-  //  const { isModalOpen } = useMyContext();
   return (
     <Box
       align="center"
@@ -39,10 +38,17 @@ export function Footer() {
         justify="space-between"
         flexDir={{ base: "column", lg: "row" }}
       >
-        <Box alt="Voltar para pagina inicial" as="a" href="/" flex={1} pb={8}>
-          <LogoVerticalSvg />
-        </Box>
-        <Flex flexWrap="wrap" flex={2.5} w="full" justify={{base:"center", sm:'space-between'}}>
+        <Link href="/" passHref>
+          <Box _hover={{cursor:'pointer'}} alt="Voltar para pagina inicial" flex={1} pb={8}>
+            <LogoVerticalSvg />
+          </Box>
+        </Link>
+        <Flex
+          flexWrap="wrap"
+          flex={2.5}
+          w="full"
+          justify={{ base: "center", sm: "space-between" }}
+        >
           <VStack p={4} align="start" textAlign="start">
             <Heading fontSize={18}>Institucional</Heading>
             <Box
@@ -80,20 +86,29 @@ export function Footer() {
               Máquina de cartão
             </Text>
           </VStack>
-          <VStack p={4} align={{base:"center", sm:'start'}} textAlign="start">
+          <VStack
+            p={4}
+            align={{ base: "center", sm: "start" }}
+            textAlign="start"
+          >
             <Heading fontSize={18}>Redes sociais</Heading>
             <Box
               w="30px"
               h="2px"
               bgGradient="linear(to-r, verde -20%, azul 120%)"
             />
-            <Box sx={{svg:{opacity:1, mr:2}}} pt={4}>
+            <Box sx={{ svg: { opacity: 1, mr: 2 } }} pt={4}>
               <InstagramSvg />
               <FacebookSvg />
               <TwitterSvg />
             </Box>
           </VStack>
-          <VStack p={4} w={{base:"100%", sm:'unset'}} align={{base:"center", sm:'start'}} textAlign="start">
+          <VStack
+            p={4}
+            w={{ base: "100%", sm: "unset" }}
+            align={{ base: "center", sm: "start" }}
+            textAlign="start"
+          >
             <Heading fontSize={18}>Atendimento</Heading>
             <Box
               w="30px"
@@ -106,7 +121,8 @@ export function Footer() {
             <Text as="a" href="tel:33 3321-2121">
               (33) 3321-2121
             </Text>
-            <Button bgGradient="linear(to-r, azul, verde)"
+            <Button
+              bgGradient="linear(to-r, azul, verde)"
               colorScheme="none"
               fontSize="12px"
               w="full"
@@ -127,7 +143,12 @@ export function Footer() {
         justify="space-evenly"
       >
         <Text>©2021 Propter - Todos os direitos reservados</Text>
-        <Text rel="noopener" target="_blank" as="a" href="https://www.instagram.com/suricato.agencia/">
+        <Text
+          rel="noopener"
+          target="_blank"
+          as="a"
+          href="https://www.instagram.com/suricato.agencia/"
+        >
           Feito com <HeartSvg /> por Suricato Agência
         </Text>
       </Flex>

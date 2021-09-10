@@ -1,5 +1,5 @@
 import { ChevronDownIcon } from "@chakra-ui/icons";
-import { Box, Button, HStack, Text, Wrap } from "@chakra-ui/react";
+import { Box, Button, HStack, Text, Flex } from "@chakra-ui/react";
 import { HiOutlineUser } from "react-icons/hi";
 import { useMyContext } from "../contexts/Context";
 import {
@@ -101,7 +101,7 @@ export function Menu({setModal}) {
 
 export const MenuTop = () => (
   <>
-    <Wrap>
+    <Flex flexWrap="wrap">
       <HStack px={2}>
         <InstagramSvg />
         <Text fontSize={14} opacity={0.6}>
@@ -120,8 +120,8 @@ export const MenuTop = () => (
           @propter
         </Text>
       </HStack>
-    </Wrap>
-    <Wrap>
+    </Flex>
+    <Flex flexWrap="wrap">
       <HStack px={2}>
         <Text
           as="a"
@@ -139,6 +139,6 @@ export const MenuTop = () => (
         </Text>
         <PhoneSvg />
       </HStack>
-    </Wrap>
+    </Flex>
   </>
 );

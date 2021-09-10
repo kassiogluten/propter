@@ -10,10 +10,8 @@ import {
 } from "@chakra-ui/react";
 
 import React from "react";
-//import { useMyContext } from "../contexts/Context";
 
 export function History() {
-  //  const { isModalOpen } = useMyContext();
   return (
     <Box align="center" w="100%" bg="white">
       <Flex

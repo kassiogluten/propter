@@ -1,10 +1,8 @@
 import { Box, Flex, Heading } from "@chakra-ui/react";
 
 import React from "react";
-//import { useMyContext } from "../contexts/Context";
 
 export function Hero() {
-  //  const { isModalOpen } = useMyContext();
   return (
     <Box align="center" w="100%" bg="blue.100">
       <Flex

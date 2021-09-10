@@ -124,7 +124,6 @@ const Posts = ({ posts }) => (
               >
                 <Image 
                   alt={post.name}
-                  borderRadius="5px"
                   width={45}
                   height={45}
                   src={post.img}

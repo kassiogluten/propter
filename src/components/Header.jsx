@@ -12,7 +12,6 @@ import {
   useDisclosure,
   VStack,
   DarkMode,
-  Link,
   Stack,
   Modal,
   ModalOverlay,
@@ -25,6 +24,8 @@ import {
   Wrap,
   DrawerFooter,
 } from "@chakra-ui/react";
+
+import Link from "next/link";
 
 import { FaThList } from "react-icons/fa";
 import React, { useState } from "react";
@@ -75,13 +76,19 @@ export function Header() {
             maxW={1200}
             justify="space-between"
           >
-            <Link alt="Voltar para pagina inicial" as="a" href="/">
-              <LogoSvg />
+            <Link href="/" passHref>
+              <Box  _hover={{cursor:'pointer'}} >
+                <LogoSvg />
+              </Box>
             </Link>
             <HStack display={{ base: "none", lg: "flex" }} spacing={6}>
               <Menu setModal={setModal} />
             </HStack>
-            <IconButton aria-label="Menu de navegação" onClick={onOpen} display={{ base: "flex", lg: "none" }}>
+            <IconButton
+              aria-label="Menu de navegação"
+              onClick={onOpen}
+              display={{ base: "flex", lg: "none" }}
+            >
               <FaThList />
             </IconButton>
             {isServicesOpen && <MenuServices />}
@@ -101,7 +108,7 @@ export function Header() {
 
               <DrawerBody onClick={onClose}>
                 <VStack spacing={10}>
-                <Menu setModal={setModal} />
+                  <Menu setModal={setModal} />
                   <Stack pt={8} spacing={8} maxW={200} flexDir="column">
                     <MenuTop />
                   </Stack>

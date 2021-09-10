@@ -1,12 +1,12 @@
 import { CloseIcon } from "@chakra-ui/icons";
-import { Box, CloseButton, Heading, Text, VStack, Wrap } from "@chakra-ui/react";
+import { Box, CloseButton, Heading, Text, VStack, Flex } from "@chakra-ui/react";
 import { useMyContext } from "../contexts/Context";
 import { CalculatorSvg, CardSvg, CarSvg, JournalSvg, LinkSvg, MoneySvg, PublicSvg, WriteSvg } from "../icons";
 
 export function MenuServices() {
   const { setIsServicesOpen } = useMyContext();
   return (
-    <Wrap
+    <Flex flexWrap="wrap"
       pos="absolute"
       top={{ base: 100, md: 220 }}
       left="50%"
@@ -78,14 +78,14 @@ export function MenuServices() {
           A Propter tem a máquina de cartão ideal para você que é empreendedor.
         </Text>
       </VStack>
-    </Wrap>
+    </Flex>
   );
 }
 
 export function MenuLinks() {
   const { setIsLinksOpen } = useMyContext();
   return (
-    <Wrap
+    <Flex flexWrap="wrap"
       pos="absolute"
       top={{ base: 100, md: 220 }}
       left="50%"
@@ -132,6 +132,6 @@ export function MenuLinks() {
           Acesse outros links de utilidade pública.
         </Text>
       </VStack>
-    </Wrap>
+    </Flex>
   );
 }
