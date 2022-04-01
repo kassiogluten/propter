@@ -40,58 +40,58 @@ Venha ser Propter"
       <VideoHistory />
       <Services />
       <Testimonials bg="cinza" color="white" />
-      <Blog posts={posts} />
+      {/* <Blog posts={posts} /> */}
       <Footer />
     </div>
   );
 }
 
-export async function getStaticProps() {
-  const apolloClient = getApolloClient();
+// export async function getStaticProps() {
+//   const apolloClient = getApolloClient();
 
-  const data = await apolloClient.query({
-    query: gql`
-      {
-        generalSettings {
-          title
-          description
-        }
-        posts(first: 10000, where: { categoryName: "Propter" }) {
-          edges {
-            node {
-              id
-              excerpt
-              title
-              slug
-              featuredImage {
-                node {
-                  mediaItemUrl
-                }
-              }
-            }
-          }
-        }
-      }
-    `,
-  });
+//   const data = await apolloClient.query({
+//     query: gql`
+//       {
+//         generalSettings {
+//           title
+//           description
+//         }
+//         posts(first: 10000, where: { categoryName: "Propter" }) {
+//           edges {
+//             node {
+//               id
+//               excerpt
+//               title
+//               slug
+//               featuredImage {
+//                 node {
+//                   mediaItemUrl
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     `,
+//   });
 
-  const posts = data?.data.posts.edges
-    .map(({ node }) => node)
-    .map((post) => {
-      return {
-        ...post,
-        path: `/blog/${post.slug}`,
-      };
-    });
+//   const posts = data?.data.posts.edges
+//     .map(({ node }) => node)
+//     .map((post) => {
+//       return {
+//         ...post,
+//         path: `/blog/${post.slug}`,
+//       };
+//     });
 
-  const page = {
-    ...data?.data.generalSettings,
-  };
+//   const page = {
+//     ...data?.data.generalSettings,
+//   };
 
-  return {
-    props: {
-      page,
-      posts,
-    },
-  };
-}
+//   return {
+//     props: {
+//       page,
+//       posts,
+//     },
+//   };
+// }

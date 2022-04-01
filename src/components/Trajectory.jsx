@@ -1,9 +1,4 @@
-import {
-  Box,
-  Circle,
-  Flex,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Circle, Flex, Text } from "@chakra-ui/react";
 
 import React from "react";
 
@@ -36,20 +31,18 @@ export function Trajectory() {
           <TimeLine />
           <CardBlue
             year="1994"
-            desc="Tudo se inicia neste ano com as operações na área contábil com no nome
+            desc="Iniciamos as operações com o nome
             Asteco - Assessoria Técnica Contábil"
           />
           <CardGreen
             year="2002"
-            desc="Nasce neste ano a Evidenciar Contabilidade. Com mudança para um novo
+            desc="Asteco passa a chamar-se Evidenciar Contabilidade. Com mudança para um novo
       endereço e aquisição de um unidade contábil aumentando a carteira de
       clientes ."
           />
           <CardBlue
             year="2008"
-            desc="Realizamos uma alteração nome para Evidenciar Gestão Contábil. Um momento especial para nós, pois adquirimos nossa sede própria.
-            Tudo se inicia neste ano com as operações na área contábil com no nome
-            Asteco - Assessoria Técnica Contábil"
+            desc="Realizamos uma alteração nome para Evidenciar Gestão Contábil. Um momento especial para nós, pois adquirimos nossa sede própria."
           />
           <CardGreen
             year="2018"

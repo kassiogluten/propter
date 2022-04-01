@@ -79,16 +79,16 @@ export function Hero() {
         bg="white"
         justify="center"
       >
-        <Card title="Fundação" desc="Nossa chegada foi dia 28 de março de 1994">
+        <Card title="Fundação" desc="Início das operações, 1 de março de 1994">
           <FundacaoSvg />
         </Card>
-        <Card title="Colaboradores" desc="Somos cerca de 19 Propters">
+        <Card title="Colaboradores" desc="Somos dezenas de Propters">
           <ColaboradoresSvg />
         </Card>
-        <Card title="Clientes" desc="Atendemos cerca de 50 clientes parceiros">
+        <Card title="Clientes" desc="Atendemos centenas de clientes parceiros">
           <ClientesSvg />
         </Card>
-        <Card title="Crescimento" desc="Crescemos mais de 20% ao ano">
+        <Card title="Crescimento" desc="Nos últimos anos, nossa taxa de crescimento foi de 30%">
           <CrescimentoSvg />
         </Card>
       </Wrap>

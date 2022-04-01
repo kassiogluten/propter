@@ -68,9 +68,9 @@ export function Menu({setModal}) {
         )}
       </Text>
 
-      <Text as="a" href="/blog">
+      {/* <Text as="a" href="/blog">
         Nosso blog
-      </Text>
+      </Text> */}
       <Text as="a" href="/contato">
         Fale com a gente
       </Text>

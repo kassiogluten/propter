@@ -109,9 +109,9 @@ export function Contact({color}) {
               </Text>
             </Grid>
 
-            <Center w="100%" maxW={600} h={230} bg="gray.200" borderRadius={10}>
+            {/* <Center w="100%" maxW={600} h={230} bg="gray.200" borderRadius={10}>
               <Text opacity={0.3}>Mapa</Text>
-            </Center>
+            </Center> */}
           </Wrap>
         </Flex>
       </Box>

@@ -52,13 +52,13 @@ export function OurMission() {
                 },
               }}
             >
-              Melhorar sua experiência de contabilidade do{" "}
+              Melhorar sua experiência de contabilidade no{" "}
               <strong>seu negócio</strong>
             </Text>
           </HStack>
           <Text pb={12} color="#5D5459">
             Uso intenso de tecnologia, ofertando serviços contábeis
-            diferenciador e de qualidade, inovando sempre com utilização de
+            diferenciados e de qualidade, inovando sempre com utilização de
             ferramentas digitais ágeis e entregando mais valor, além de auxiliar
             os empreendedores nas tomadas de decisões.
           </Text>

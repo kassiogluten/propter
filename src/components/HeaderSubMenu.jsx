@@ -62,7 +62,7 @@ export function MenuServices() {
           color="#5D5459"
           pr={4}
         >
-          Seu financiamento imobiliário com a melhor taxa do mercado.
+          Seu financiamento de bens com a melhor taxa do mercado.
         </Text>
       </VStack>
       <VStack as="a" href="/maquina-de-cartao" textAlign="start" align="start" py={8}>

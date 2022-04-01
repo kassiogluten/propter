@@ -62,9 +62,9 @@ export function Footer() {
             <Text as="a" href="/links">
               Links úteis
             </Text>
-            <Text as="a" href="/blog">
+            {/* <Text as="a" href="/blog">
               Nosso blog
-            </Text>
+            </Text> */}
           </VStack>
           <VStack p={4} align="start" textAlign="start">
             <Heading fontSize={18}>Produtos</Heading>
