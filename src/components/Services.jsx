@@ -35,10 +35,7 @@ export function Services() {
               Soluções para melhorar sua experiência com negócios.
             </Text>
             <Text pt={4} color="texto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              massa dui, egestas vel vulputate at, tincidunt vel dui. Nullam
-              luctus est nec porttitor posuere. In rutrum felis interdum nibh
-              ullamcorper, nec pellentesque orci facilisis.
+            Uso intenso de ferramentas digitais, consultorias estratégicas e financeiras.
             </Text>
           </VStack>
         </Box>
@@ -48,8 +45,7 @@ export function Services() {
             link="/contabilidade"
             title="Contabilidade consultiva"
             desc="A contabilidade consultiva é uma evolução da tradicional. É uma nova forma
-      que trabalhamos para melhorar a sua experiência de contabilidade da sua
-      empresa."
+      que trabalhamos para melhorar a capacidade do empresário de gestão."
           >
             <ContabilidadeSvg color="#2659FF" />
           </Card>
@@ -67,7 +63,7 @@ export function Services() {
           </Card>
           <Card link="/emprestimos-e-financiamentos"
             title="Financiamentos"
-            desc="Seu financiamento imobiliário com a melhor taxa do mercado."
+            desc="Seu financiamento de bens com a melhor taxa do mercado."
           >
             <FinanciamentosSvg color="#2659FF" />
           </Card>
