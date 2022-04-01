@@ -142,7 +142,7 @@ export function Footer() {
         fontSize=".8rem"
         justify="space-evenly"
       >
-        <Text>©2021 Propter - Todos os direitos reservados</Text>
+        <Text>©2022 Propter - Todos os direitos reservados</Text>
         <Text
           rel="noopener"
           target="_blank"
