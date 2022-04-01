@@ -1,27 +1,27 @@
-import { ApolloClient, HttpLink, InMemoryCache } from '@apollo/client';
+// import { ApolloClient, HttpLink, InMemoryCache } from '@apollo/client';
 
-let client;
+// let client;
 
-/**
- * getApolloClient
- */
+// /**
+//  * getApolloClient
+//  */
 
-export function getApolloClient() {
-  if (!client) {
-    client = _createApolloClient();
-  }
-  return client;
-}
+// export function getApolloClient() {
+//   if (!client) {
+//     client = _createApolloClient();
+//   }
+//   return client;
+// }
 
-/**
- * createApolloClient
- */
+// /**
+//  * createApolloClient
+//  */
 
-export function _createApolloClient() {
-  return new ApolloClient({
-    link: new HttpLink({
-      uri: process.env.WORDPRESS_GRAPHQL_ENDPOINT,
-    }),
-    cache: new InMemoryCache(),
-  });
-}
+// export function _createApolloClient() {
+//   return new ApolloClient({
+//     link: new HttpLink({
+//       uri: process.env.WORDPRESS_GRAPHQL_ENDPOINT,
+//     }),
+//     cache: new InMemoryCache(),
+//   });
+// }

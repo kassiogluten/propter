@@ -11,8 +11,8 @@ import { Testimonials } from "../components/Testimonials";
 import { Trajectory } from "../components/Trajectory";
 import { Why } from "../components/Why";
 
-import { getApolloClient } from "../lib/apollo-client";
-import { gql } from "@apollo/client";
+// import { getApolloClient } from "../lib/apollo-client";
+// import { gql } from "@apollo/client";
 
 export default function Home({ posts }) {
   return (
