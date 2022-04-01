@@ -115,11 +115,11 @@ export function Footer() {
               h="2px"
               bgGradient="linear(to-r, verde -20%, azul 120%)"
             />
-            <Text as="a" href="mailto:contato@proter.com.br" pt={4}>
-              contato@proter.com.br
+            <Text as="a" href="mailto:contato@propternegocios.com.br" pt={4}>
+              contato@propternegocios.com.br
             </Text>
-            <Text as="a" href="tel:33 3321-2121">
-              (33) 3321-2121
+            <Text as="a" href="tel:33 3321-6722">
+              (33) 3321-6722
             </Text>
             <Button
               bgGradient="linear(to-r, azul, verde)"

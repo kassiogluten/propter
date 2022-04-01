@@ -89,7 +89,7 @@ export function Contact({color}) {
               </Box>
               <Text align="start">Nos envie um e-mail</Text>
               <Text align="start" fontWeight={600}>
-                contato@proter.com.br
+                contato@propternegocios.com.br
               </Text>
             </Grid>
             <Grid pb={4} templateColumns="auto auto">
@@ -105,7 +105,7 @@ export function Contact({color}) {
               </Box>
               <Text align="start">Nos ligue</Text>
               <Text align="start" fontWeight={600}>
-                (33) 3321-2121
+                (33) 3321-6722
               </Text>
             </Grid>
 

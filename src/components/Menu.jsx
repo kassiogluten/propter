@@ -10,7 +10,7 @@ import {
   TwitterSvg,
 } from "../icons";
 
-export function Menu({setModal}) {
+export function Menu({ setModal }) {
   const { setIsServicesOpen, setIsLinksOpen, isServicesOpen, isLinksOpen } =
     useMyContext();
 
@@ -22,7 +22,7 @@ export function Menu({setModal}) {
       <Text
         pos="relative"
         onClick={() => setIsServicesOpen(!isServicesOpen)}
-        _hover={{cursor:'copy'}}
+        _hover={{ cursor: "copy" }}
       >
         Serviços{" "}
         <ChevronDownIcon
@@ -46,7 +46,7 @@ export function Menu({setModal}) {
       <Text
         pos="relative"
         onClick={() => setIsLinksOpen(!isLinksOpen)}
-        _hover={{cursor:'copy'}}
+        _hover={{ cursor: "copy" }}
       >
         Links úteis{" "}
         <ChevronDownIcon
@@ -74,7 +74,8 @@ export function Menu({setModal}) {
       <Text as="a" href="/contato">
         Fale com a gente
       </Text>
-      <Button onClick={()=>setModal(true)}
+      <Button
+        onClick={() => setModal(true)}
         fontSize={13}
         h={50}
         px={8}
@@ -104,11 +105,16 @@ export const MenuTop = () => (
     <Flex flexWrap="wrap">
       <HStack px={2}>
         <InstagramSvg />
-        <Text fontSize={14} opacity={0.6}>
-          @propter
+        <Text
+          fontSize={14}
+          opacity={0.6}
+          as="a"
+          href="https://www.instagram.com/propternegocioscontabeis/"
+        >
+          @propternegocioscontabeis
         </Text>
       </HStack>
-      <HStack px={2}>
+      {/* <HStack px={2}>
         <FacebookSvg />
         <Text fontSize={14} opacity={0.6}>
           @propter
@@ -119,23 +125,23 @@ export const MenuTop = () => (
         <Text fontSize={14} opacity={0.6}>
           @propter
         </Text>
-      </HStack>
+      </HStack> */}
     </Flex>
     <Flex flexWrap="wrap">
       <HStack px={2}>
         <Text
           as="a"
-          href="mailto:contato@proter.com.br"
+          href="mailto:contato@propternegocios.com.br"
           fontSize={14}
           color="texto"
         >
-          contato@proter.com.br
+          contato@propternegocios.com.br
         </Text>
         <MailSvg />
       </HStack>
       <HStack px={2}>
-        <Text as="a" href="tel:33 3321-2121" fontSize={14} color="texto">
-          (33) 3321-2121
+        <Text as="a" href="tel:33 3321-6722" fontSize={14} color="texto">
+          (33) 3321-6722
         </Text>
         <PhoneSvg />
       </HStack>
