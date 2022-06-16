@@ -1,12 +1,29 @@
 import { CloseIcon } from "@chakra-ui/icons";
-import { Box, CloseButton, Heading, Text, VStack, Flex } from "@chakra-ui/react";
+import {
+  Box,
+  CloseButton,
+  Heading,
+  Text,
+  VStack,
+  Flex,
+} from "@chakra-ui/react";
 import { useMyContext } from "../contexts/Context";
-import { CalculatorSvg, CardSvg, CarSvg, JournalSvg, LinkSvg, MoneySvg, PublicSvg, WriteSvg } from "../icons";
+import {
+  CalculatorSvg,
+  CardSvg,
+  CarSvg,
+  JournalSvg,
+  LinkSvg,
+  MoneySvg,
+  PublicSvg,
+  WriteSvg,
+} from "../icons";
 
 export function MenuServices() {
   const { setIsServicesOpen } = useMyContext();
   return (
-    <Flex flexWrap="wrap"
+    <Flex
+      flexWrap="wrap"
       pos="absolute"
       top={{ base: 100, md: 220 }}
       left="50%"
@@ -23,10 +40,16 @@ export function MenuServices() {
       onMouseLeave={() => setIsServicesOpen(false)}
       justify="space-between"
     >
-      <CloseButton pos="absolute" right={4} top={4}/>
-      <VStack as="a" href="/contabilidade" textAlign="start" align="start" py={8}>
+      <CloseButton pos="absolute" right={4} top={4} />
+      <VStack
+        as="a"
+        href="/contabilidade"
+        textAlign="start"
+        align="start"
+        py={8}
+      >
         <CalculatorSvg />
-        <Heading fontSize={16}>Contabilidade</Heading>
+        <Heading fontSize={16}>Contabilidade Digital Consultiva</Heading>
         <Text
           maxW={230}
           fontSize={14}
@@ -52,7 +75,13 @@ export function MenuServices() {
           orçamento.
         </Text>
       </VStack>
-      <VStack as="a" href="/emprestimos-e-financiamentos" textAlign="start" align="start" py={8}>
+      <VStack
+        as="a"
+        href="/emprestimos-e-financiamentos"
+        textAlign="start"
+        align="start"
+        py={8}
+      >
         <CarSvg />
         <Heading fontSize={16}>Empréstimo/Financiamentos</Heading>
         <Text
@@ -65,9 +94,15 @@ export function MenuServices() {
           Seu financiamento de bens com a melhor taxa do mercado.
         </Text>
       </VStack>
-      <VStack as="a" href="/maquina-de-cartao" textAlign="start" align="start" py={8}>
+      <VStack
+        as="a"
+        href="/maquina-de-cartao"
+        textAlign="start"
+        align="start"
+        py={8}
+      >
         <CardSvg />
-        <Heading fontSize={16}>Máquinas de cartão</Heading>
+        <Heading fontSize={16}>Máquinas de Cartão de Crédito</Heading>
         <Text
           maxW={230}
           fontSize={14}
@@ -85,7 +120,8 @@ export function MenuServices() {
 export function MenuLinks() {
   const { setIsLinksOpen } = useMyContext();
   return (
-    <Flex flexWrap="wrap"
+    <Flex
+      flexWrap="wrap"
       pos="absolute"
       top={{ base: 100, md: 220 }}
       left="50%"
@@ -102,25 +138,43 @@ export function MenuLinks() {
       onMouseLeave={() => setIsLinksOpen(false)}
       justify="space-between"
     >
-      <CloseButton pos="absolute" right={4} top={4}/>
+      <CloseButton pos="absolute" right={4} top={4} />
       <VStack as="a" href="/links" textAlign="start" align="start" py={8}>
         <PublicSvg />
         <Heading fontSize={16}>Públicos e Governo</Heading>
-        <Text maxW={230} fontSize={14} lineHeight={"24px"} color="#5D5459" pr={4}>
+        <Text
+          maxW={230}
+          fontSize={14}
+          lineHeight={"24px"}
+          color="#5D5459"
+          pr={4}
+        >
           Acesse para visualizar os sites relacionados ao governo.
         </Text>
       </VStack>
       <VStack as="a" href="/links" textAlign="start" align="start" py={8}>
         <JournalSvg />
         <Heading fontSize={16}>Jornais por estado</Heading>
-        <Text maxW={230} fontSize={14} lineHeight={"24px"} color="#5D5459" pr={4}>
+        <Text
+          maxW={230}
+          fontSize={14}
+          lineHeight={"24px"}
+          color="#5D5459"
+          pr={4}
+        >
           Acesse as principais notícias separadas por estado.
         </Text>
       </VStack>
       <VStack as="a" href="/links" textAlign="start" align="start" py={8}>
         <WriteSvg />
         <Heading fontSize={16}>Ministérios e Secretarias</Heading>
-        <Text maxW={230} fontSize={14} lineHeight={"24px"} color="#5D5459" pr={4}>
+        <Text
+          maxW={230}
+          fontSize={14}
+          lineHeight={"24px"}
+          color="#5D5459"
+          pr={4}
+        >
           Acesse para visualizar os principais sites relacionados ao serviço
           público.
         </Text>
@@ -128,7 +182,13 @@ export function MenuLinks() {
       <VStack as="a" href="/links" textAlign="start" align="start" py={8}>
         <LinkSvg />
         <Heading fontSize={16}>Utilidades e outros</Heading>
-        <Text maxW={230} fontSize={14} lineHeight={"24px"} color="#5D5459" pr={4}>
+        <Text
+          maxW={230}
+          fontSize={14}
+          lineHeight={"24px"}
+          color="#5D5459"
+          pr={4}
+        >
           Acesse outros links de utilidade pública.
         </Text>
       </VStack>

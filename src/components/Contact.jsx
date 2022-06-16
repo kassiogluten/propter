@@ -10,13 +10,10 @@ import {
 } from "@chakra-ui/react";
 
 import React from "react";
-import {
-  ContactMailSvg,
-  ContactPhoneSvg,
-} from "../icons";
+import { ContactMailSvg, ContactPhoneSvg } from "../icons";
 import { ContactForm } from "./ContactForm";
 
-export function Contact({color}) {
+export function Contact({ color }) {
   return (
     <>
       <Box align="center" w="100%" bg="cinza" id="contato">
@@ -75,7 +72,13 @@ export function Contact({color}) {
         >
           <ContactForm color={color} />
 
-          <Wrap my={8} maxW={550} align="center" justify="space-between" flex={1}>
+          <Wrap
+            my={8}
+            maxW={550}
+            align="center"
+            justify="space-between"
+            flex={1}
+          >
             <Grid templateColumns="auto auto">
               <Box
                 borderRadius={10}
@@ -93,7 +96,7 @@ export function Contact({color}) {
               </Text>
             </Grid>
             <Grid pb={4} templateColumns="auto auto">
-              <Box
+              <Center
                 borderRadius={10}
                 p={2}
                 bg="#2659FF1A"
@@ -102,10 +105,12 @@ export function Contact({color}) {
                 rowSpan={2}
               >
                 <ContactPhoneSvg />
-              </Box>
+              </Center>
               <Text align="start">Nos ligue</Text>
               <Text align="start" fontWeight={600}>
                 (33) 3321-6722
+                <br />
+                (33) 98836-7853
               </Text>
             </Grid>
 

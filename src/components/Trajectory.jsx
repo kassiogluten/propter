@@ -36,22 +36,20 @@ export function Trajectory() {
           />
           <CardGreen
             year="2002"
-            desc="Asteco passa a chamar-se Evidenciar Contabilidade. Com mudança para um novo
-      endereço e aquisição de um unidade contábil aumentando a carteira de
-      clientes ."
+            desc="Asteco passa a chamar-se Evidenciar Contabilidade. Com mudança para um novo endereço e aquisição de uma nova unidade contábil aumentando a carteira de cliente."
           />
           <CardBlue
             year="2008"
-            desc="Realizamos uma alteração nome para Evidenciar Gestão Contábil. Um momento especial para nós, pois adquirimos nossa sede própria."
+            desc="Realizamos uma alteração do nome para Evidenciar Gestão Contábil. Um momento especial para nós, pois adquirimos nossa sede própria."
           />
           <CardGreen
             year="2018"
-            desc="Em 2017 realizamos melhorias e modernização da infraestrutura física da sede. E em 2018 começamos a implementação contabilidade digital e consultiva .
+            desc="Em 2017 realizamos melhorias e modernização da infraestrutura física da sede. E em 2018 começamos a implementação da Contabilidade Digital Consultiva.
             "
           />
           <CardBlue
             year="HOJE"
-            desc="Passamos por uma transformação, a Evidenciar se evolui e se transforma na Propter, que a missão é entregar ao empresário uma contabilidade digital e consultiva."
+            desc="Passamos por uma transformação, a Evidenciar evolui e se transforma na Propter Negócios Contábeis que tem como missão a entrega ao empresário de uma Contabilidade Digital Consultiva.Passamos por uma transformação, a Evidenciar se evolui e se transforma na Propter, que a missão é entregar ao empresário uma contabilidade digital e consultiva."
           />
         </Flex>
       </Flex>

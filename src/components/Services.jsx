@@ -35,41 +35,51 @@ export function Services() {
               Soluções para melhorar sua experiência com negócios.
             </Text>
             <Text pt={4} color="texto">
-            Uso intenso de ferramentas digitais, consultorias estratégicas e financeiras.
+              Uso intenso de ferramentas digitais, consultorias estratégicas e
+              financeiras.
             </Text>
           </VStack>
         </Box>
-        <Flex flexWrap="wrap"  align="center" justify="space-between" flex={1} pt={8}>
+        <Flex
+          flexWrap="wrap"
+          align="center"
+          justify="space-between"
+          flex={1}
+          pt={8}
+        >
           <Card
             full
             link="/contabilidade"
-            title="Contabilidade consultiva"
-            desc="A contabilidade consultiva é uma evolução da tradicional. É uma nova forma
-      que trabalhamos para melhorar a capacidade do empresário de gestão."
+            title="Contabilidade digital consultiva"
+            desc="É o uso intenso de ferramentas digitais nas operações contábeis, permitindo a implementação de consultorias estratégicas e financeiras."
           >
             <ContabilidadeSvg color="#2659FF" />
           </Card>
-          <Card link="/seguros"
+          <Card
+            link="/seguros"
             title="Seguros"
             desc="Encontre o seguro ideal para você e para a sua família. São diversas modalidades para escolher."
           >
             <SegurosSvg color="#2659FF" />
           </Card>
-          <Card link="/emprestimos-e-financiamentos"
+          <Card
+            link="/emprestimos-e-financiamentos"
             title="Empréstimos "
             desc="Conheça o melhor crédito do mercado, que pode te dar aquela força no orçamento."
           >
             <EmprestimosSvg color="#21D97A" />
           </Card>
-          <Card link="/emprestimos-e-financiamentos"
+          <Card
+            link="/emprestimos-e-financiamentos"
             title="Financiamentos"
             desc="Seu financiamento de bens com a melhor taxa do mercado."
           >
             <FinanciamentosSvg color="#2659FF" />
           </Card>
-          <Card link="/maquina-de-cartao"
-            title="Máquinas de cartão"
-            desc="A Propter tem a máquina de cartão ideal para você que é empreendedor."
+          <Card
+            link="/maquina-de-cartao"
+            title="Máquinas de cartão de crédito"
+            desc="A Propter Negócios Contábeis tem a máquina de cartão de crédito ideal para você que é empreendedor."
           >
             <MaquinasSvg color="#21D97A" />
           </Card>
@@ -79,11 +89,19 @@ export function Services() {
   );
 }
 
-const Card = ({ title, desc, children,link, full }) => (
-  <VStack _hover={{
-    cursor: "pointer",
-    bg:"white"
-  }} as="a" href={link} p={2} w={full ? "full" : "47%"} align="start" textAlign="start">
+const Card = ({ title, desc, children, link, full }) => (
+  <VStack
+    _hover={{
+      cursor: "pointer",
+      bg: "white",
+    }}
+    as="a"
+    href={link}
+    p={2}
+    w={full ? "full" : "47%"}
+    align="start"
+    textAlign="start"
+  >
     {children}
     <Heading fontSize={18}>{title}</Heading>
     <Text maxW={full ? "full" : 218} color="texto">

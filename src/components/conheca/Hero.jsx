@@ -16,6 +16,10 @@ import {
   FundacaoSvg,
 } from "../../icons";
 
+import SwiperCore, { Navigation } from "swiper/core";
+import { Swiper, SwiperSlide } from "swiper/react";
+SwiperCore.use([Navigation]);
+
 export function Hero() {
   return (
     <Box align="center" w="100%" bg="cinza">
@@ -63,13 +67,29 @@ export function Hero() {
             </Text>
           </Box>
         </VStack>
-        <Box
-          bgSize="cover"
-          bgPos="center"
-          bgImage="escritorio.jpg"
-          h={450}
-          w="full"
-        ></Box>
+
+        <Box h={450} maxW={{ base: "100%", md: "50%" }} w="full">
+          <Swiper navigation={true}>
+            <SwiperSlide>
+              <Box
+                bgSize="cover"
+                bgPos="center"
+                bgImage="escritorio.jpg"
+                h={450}
+                w="full"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Box
+                bgSize="cover"
+                bgPos="center"
+                bgImage="https://www.sailthru.com/content/uploads/2021/05/photo-1606857521015-7f9fcf423740-scaled.jpeg"
+                h={450}
+                w="full"
+              />
+            </SwiperSlide>
+          </Swiper>
+        </Box>
       </Flex>
       <Wrap
         w="100%"
@@ -79,7 +99,7 @@ export function Hero() {
         bg="white"
         justify="center"
       >
-        <Card title="Fundação" desc="Início das operações, 1 de março de 1994">
+        <Card title="Fundação" desc="Início das operações, 01 de março de 1994">
           <FundacaoSvg />
         </Card>
         <Card title="Colaboradores" desc="Somos dezenas de Propters">
@@ -88,7 +108,10 @@ export function Hero() {
         <Card title="Clientes" desc="Atendemos centenas de clientes parceiros">
           <ClientesSvg />
         </Card>
-        <Card title="Crescimento" desc="Nos últimos anos, nossa taxa de crescimento foi de 30%">
+        <Card
+          title="Crescimento"
+          desc="Nos últimos anos, nossa taxa de crescimento foi de 30% ao ano"
+        >
           <CrescimentoSvg />
         </Card>
       </Wrap>

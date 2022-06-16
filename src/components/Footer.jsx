@@ -17,8 +17,7 @@ import {
   LogoVerticalSvg,
   TwitterSvg,
 } from "../icons";
-import Link from 'next/link'
-
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -39,7 +38,12 @@ export function Footer() {
         flexDir={{ base: "column", lg: "row" }}
       >
         <Link href="/" passHref>
-          <Box _hover={{cursor:'pointer'}} alt="Voltar para pagina inicial" flex={1} pb={8}>
+          <Box
+            _hover={{ cursor: "pointer" }}
+            alt="Voltar para pagina inicial"
+            flex={1}
+            pb={8}
+          >
             <LogoVerticalSvg />
           </Box>
         </Link>
@@ -83,7 +87,7 @@ export function Footer() {
               Financiamentos
             </Text>
             <Text as="a" href="/maquina-de-cartao">
-              Máquina de cartão
+              Máquinas de cartão de crédito
             </Text>
           </VStack>
           <VStack

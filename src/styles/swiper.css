@@ -1,8 +1,7 @@
-
 .swiper-container {
   width: 100%;
   height: 100%;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 .Blog.swiper-container {
   position: static !important;
@@ -27,9 +26,10 @@
 
 .swiper-button-prev,
 .swiper-button-next {
+  padding-top: 20px;
   bottom: 40px;
   top: inherit;
-  left:70px;
+  left: 70px;
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -45,7 +45,7 @@
 #blog-slider .swiper-button-prev,
 #blog-slider .swiper-button-next {
   top: 8rem;
-  left:inherit;
+  left: inherit;
   right: 2.5rem;
   z-index: 99;
 }
@@ -68,22 +68,20 @@
   transform: rotate(180deg);
 }
 
-
-
 .swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   bottom: 40px !important;
 }
 
- .swiper-pagination-bullet {
+.swiper-pagination-bullet {
   opacity: 0.3;
   margin: 0 2.5px !important;
   width: 10px;
   height: 10px;
   transition: all 300ms ease;
 }
- .swiper-pagination-bullet-active {
+.swiper-pagination-bullet-active {
   opacity: 1;
   width: 20px;
   background-color: azul;
@@ -91,7 +89,6 @@
 }
 
 @media (max-width: 640px) {
-  
   .swiper-button-next {
     right: 20px;
   }

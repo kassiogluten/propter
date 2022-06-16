@@ -38,8 +38,8 @@ export function History() {
             Nossa <strong>história</strong>
           </Text>
           <Text>
-            Iniciamos nossas operações em 1994 com a Asteco, que ja era uma
-            empresa focada no atendimento do cliente.
+            Iniciamos nossas operações em 1994 com a Asteco, que já era uma
+            empresa focada no atendimento ao cliente.
           </Text>
           <Text>
             Em 2002, já em franco crescimento adquirimos uma nova unidade
@@ -51,14 +51,13 @@ export function History() {
             A evolução e inovação está no nosso DNA. Logo, passar por um
             processo de modernização foi necessário. Tudo iniciou em 2017, além
             de modernizar a infraestrura física, modernizamos os serviços, dando
-            início a Contabilidade Digital e Consultiva.
+            início a Contabilidade Digital Consultiva.
           </Text>
           <Text>
-            Por isso, hoje estamos passando por mais uma mudança, agora a <b>
-              Evidenciar é Propter
-              Negócios Contábeis
-            </b>. Queremos ser top of mind para os empresários da
-            região. No fim das contas, a Propter é a solução para a sua empresa.
+            Por isso, hoje estamos passando por mais uma mudança, agora a{" "}
+            <b>Evidenciar é Propter Negócios Contábeis</b>. Queremos ser top of
+            mind para os empresários da região. No fim das contas, a Propter é a
+            solução para a sua empresa.
           </Text>
         </Stack>
         <VStack p={8} h={270} m={8} flex={1} bg="#F5F6FA" borderRadius={10}>
