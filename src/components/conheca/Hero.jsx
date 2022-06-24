@@ -21,6 +21,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 SwiperCore.use([Navigation]);
 
 export function Hero() {
+  const PHOTOS = ["/SALA01.jpg", "/SALA02.jpg", "/SALA03.jpg", "/SALA04.jpg"];
   return (
     <Box align="center" w="100%" bg="cinza">
       <Flex
@@ -70,24 +71,17 @@ export function Hero() {
 
         <Box h={450} maxW={{ base: "100%", md: "50%" }} w="full">
           <Swiper navigation={true}>
-            <SwiperSlide>
-              <Box
-                bgSize="cover"
-                bgPos="center"
-                bgImage="escritorio.jpg"
-                h={450}
-                w="full"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Box
-                bgSize="cover"
-                bgPos="center"
-                bgImage="https://www.sailthru.com/content/uploads/2021/05/photo-1606857521015-7f9fcf423740-scaled.jpeg"
-                h={450}
-                w="full"
-              />
-            </SwiperSlide>
+            {PHOTOS.map((item) => (
+              <SwiperSlide key={item}>
+                <Box
+                  bgSize="cover"
+                  bgPos="center"
+                  bgImage={item}
+                  h={450}
+                  w="full"
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </Box>
       </Flex>

@@ -49,7 +49,7 @@ export function Trajectory() {
           />
           <CardBlue
             year="HOJE"
-            desc="Passamos por uma transformação, a Evidenciar evolui e se transforma na Propter Negócios Contábeis que tem como missão a entrega ao empresário de uma Contabilidade Digital Consultiva.Passamos por uma transformação, a Evidenciar se evolui e se transforma na Propter, que a missão é entregar ao empresário uma contabilidade digital e consultiva."
+            desc="Passamos por uma transformação, a Evidenciar evolui e se transforma na Propter Negócios Contábeis que tem como missão a entrega ao empresário de uma Contabilidade Digital Consultiva."
           />
         </Flex>
       </Flex>

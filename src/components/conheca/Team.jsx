@@ -10,25 +10,97 @@ import {
 } from "@chakra-ui/react";
 
 const team = [
-  { name: "Alidiane Oliveira", job: "Relacionamento", img:"team1.jpg" },
-  { name: "Harlem Santiago", job: "Recursos Humanos", img:"team2.jpg" },
-  { name: "Luana Fernandes", job: "Recursos Humanos", img:"team3.jpg" },
-  // { name: "Márcio Santos", job: "Logística", img:"team4.jpg" },
-  // { name: "Camila Neves", job: "Recursos Humanos", img:"team5.jpg" },
-  // { name: "Amanda Lopes", job: "R.H e Logística", img:"team6.jpg" },
-  { name: "Ana Laura", job: "Logística", img:"team7.jpg" },
-  // { name: "Mariane Miranda", job: "Contábil/Fiscal", img:"team8.jpg" },
-  { name: "João Marcos", job: "Contábil/Fiscal", img:"team9.jpg" },
-  // { name: "Andreisa Pedra", job: "Contábil/Fiscal", img:"team10.jpg" },
-  // { name: "Luciana Barra", job: "Contábil/Fiscal", img:"team11.jpg" },
-  // { name: "Laís Assis", job: "Recursos Humanos", img:"team12.jpg" },
-  { name: "Maria Luiza Assis", job: "Contábil/Fiscal", img:"team13.jpg" },
-  { name: "Daniela Martins", job: "Contábil/Fiscal", img:"team14.jpg" },
-  { name: "Regiene Ribeiro", job: "Contábil/Fiscal", img:"team15.jpg" },
-  // { name: "Fabiana Gomes", job: "Recursos Humanos", img:"team16.jpg" },
-  { name: "Letícia Ferreira", job: "Contábil/Fiscal", img:"team17.jpg" },
-  { name: "Samantha Oliveira", job: "Recursos Humanos", img:"team18.jpg" },
-  { name: "Lidiane Rezende", job: "Contábil/Fiscal", img:"team19.jpg" }
+  {
+    name: "ALIDIANE DAMASCENO DE OLIVEIRA FERREIRA ",
+    job: "Relacionamento",
+    img: "ALIDIANE.jpg",
+  },
+  {
+    name: "ANA LUIZA DE SOUZA TEIXEIRA ",
+    job: "Sucesso do cliente",
+    img: "ANA LUIZA.jpg",
+  },
+  {
+    name: "ANNA CLAUDIA DE OLIVEIRA BARBOSA ",
+    job: "Recursos Humanos",
+    img: "ANNA CLAUDIA.jpg",
+  },
+  {
+    name: "ANNA LAURA DE OLIVEIRA FERREIRA ",
+    job: "Logística",
+    img: "ANNA LAURA.jpg",
+  },
+  {
+    name: "BIANCA DEYSE AQUINO DA SILVA ",
+    job: "Sucesso do cliente",
+    img: "BIANCA.jpg",
+  },
+  {
+    name: "DAVIDSON SERVULO FAGUNDES DE LANES  ",
+    job: "Contábil Fiscal",
+    img: "DAVIDSON.jpg",
+  },
+  {
+    name: "ESTHER DE MOURA HEMERICK ",
+    job: "Contábil Fiscal",
+    img: "ESTHER.jpg",
+  },
+  {
+    name: "KARINE KEREN ANDRADE FREITAS ",
+    job: "Recursos Humanos",
+    img: "KARINE.jpg",
+  },
+  {
+    name: "KEITTY DAYANA DOS SANTOS LOURES ",
+    job: "Contábil Fiscal",
+    img: "KEITTY.jpg",
+  },
+  {
+    name: "LETICIA MARIA FERREIRA ",
+    job: "Contábil Fiscal",
+    img: "LETICIA.jpg",
+  },
+  {
+    name: "LIDIANE DE SOUZA REZENDE ",
+    job: "Contábil Fiscal",
+    img: "LIDIANE.jpg",
+  },
+  {
+    name: "LUANA FERNANDES DE FARIA ",
+    job: "Recursos Humanos",
+    img: "LUANA.jpg",
+  },
+  {
+    name: "MARIA LUIZA DE ASSIS PIRES ",
+    job: "Contábil Fiscal",
+    img: "MARIA LUIZA.jpg",
+  },
+  {
+    name: "PRISCILLA DE CASTRO E SILVA ",
+    job: "Contábil Fiscal",
+    img: "PRISCILLA.jpg",
+  },
+
+  {
+    name: "RAFAELA DOMICIANO RODRIGUES ALVES ",
+    job: "Recursos Humanos",
+    img: "RAFAELA.jpg",
+  },
+  {
+    name: "REGIENE RIBEIRO DE LIMA ",
+    job: "Contábil Fiscal",
+    img: "REGIENE.jpg",
+  },
+  {
+    name: "SANDRA PEREIRA RIBEIRO ",
+    job: "Contábil Fiscal",
+    img: "SANDRA.jpg",
+  },
+  {
+    name: "STEFANE CAROLINE DE OLIVEIRA ",
+    job: "Recursos Humanos",
+    img: "STEFANE.jpg",
+  },
 ];
 
 export function Team() {
@@ -73,8 +145,8 @@ const Card = ({ img, name, job }) => (
     bg="white"
     justify="center"
   >
-    <Image borderRadius={5} src={img} alt={name}></Image>
-    <Text>{name}</Text>
+    <Image borderRadius={5} src={"/equipe/" + img} alt={name}></Image>
+    <Text fontSize={12}>{name}</Text>
     <Text color="azul">{job}</Text>
   </VStack>
 );
