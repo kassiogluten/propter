@@ -17,11 +17,11 @@ export default function Home() {
         <meta property="og:title" content="Seguros" />
         <meta
           name="description"
-          content="Conheça nossa gama de produtos e serviços com proteções dos mais variados tipos, para você, sua família e empresa, além dos maisvariados produtos financeiros."
+          content="Conheça nossa gama de produtos e serviços com proteções para você, sua família e empresa, além dos mais variados produtos financeiros."
         />
         <meta
           property="og:description"
-          content="Conheça nossa gama de produtos e serviços com proteções dos mais variados tipos, para você, sua família e empresa, além dos maisvariados produtos financeiros."
+          content="Conheça nossa gama de produtos e serviços com proteções para você, sua família e empresa, além dos mais variados produtos financeiros."
         />
         <meta property="og:image" content="/servicos.jpg" key="ogimage" />
       </Head>
@@ -29,7 +29,7 @@ export default function Home() {
       <Hero
         color="azul"
         title="Seguros"
-        desc="Conheça nossa gama de produtos e serviços com proteções dos mais variados tipos, para você, sua família e empresa, além dos maisvariados produtos financeiros.
+        desc="Conheça nossa gama de produtos e serviços com proteções para você, sua família e empresa, além dos mais variados produtos financeiros.
         "
       >
         <SegurosSvg color="white" />

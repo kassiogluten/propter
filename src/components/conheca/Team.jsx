@@ -31,14 +31,14 @@ const team = [
     img: "ANNA LAURA.jpg",
   },
   {
-    name: "BIANCA DEYSE AQUINO DA SILVA ",
-    job: "Sucesso do cliente",
-    img: "BIANCA.jpg",
-  },
-  {
     name: "DAVIDSON SERVULO FAGUNDES DE LANES  ",
     job: "Contábil Fiscal",
     img: "DAVIDSON.jpg",
+  },
+  {
+    name: "DEBORAH ACKES NERES ",
+    job: "Sucesso do cliente",
+    img: "DEBORAH.jpg",
   },
   {
     name: "ESTHER DE MOURA HEMERICK ",

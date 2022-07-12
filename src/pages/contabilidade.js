@@ -20,7 +20,7 @@ export default function Home() {
       <Hero
         color="azul"
         title="Contabilidade Digital Consultiva"
-        desc="É a capacidade da empresa de serviços contábeis de ofertar serviços diferenciados  e de qualidade para seus clientes  usando intensamente a tecnologia, inovando sempre e entregando mais valor. "
+        desc="A Propter Negócios Contábeis oferta serviços diferenciados e de qualidade para seus clientes usando intensamente a tecnologia, inovando sempre e entregando mais valor. "
       >
         <ContabilidadeSvg color="white" />
       </Hero>
